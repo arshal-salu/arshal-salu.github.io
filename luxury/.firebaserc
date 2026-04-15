@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "luxurygold916-8c0e0"
+  },
+  "targets": {
+    "luxurygold916-8c0e0": {
+      "hosting": {
+        "luxury-site": [
+          "luxurygold916"
+        ],
+        "backup-site": [
+          "luxurygold916-8c0e0"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

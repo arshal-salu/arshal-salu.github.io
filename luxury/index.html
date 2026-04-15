@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LUXURY GOLD &amp; SILVER</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#4e3700",
+                        "on-secondary-fixed-variant": "#474747",
+                        "primary-fixed-dim": "#e9c176",
+                        "inverse-surface": "#313030",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#b2a488",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "inverse-primary": "#e9c176",
+                        "tertiary-fixed": "#f1e1c2",
+                        "surface-tint": "#775a19",
+                        "primary": "#775a19",
+                        "tertiary-fixed-dim": "#d4c5a7",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "primary-container": "#c5a059",
+                        "surface-container-high": "#ebe7e7",
+                        "secondary": "#5f5e5e",
+                        "on-surface": "#1c1b1b",
+                        "surface": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-container": "#e4e2e1",
+                        "tertiary": "#695d45",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#d1c5b4",
+                        "on-tertiary-container": "#443a25",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-container": "#f0edec",
+                        "on-primary-fixed": "#261900",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#ffdea5",
+                        "secondary-fixed": "#e4e2e1",
+                        "outline": "#7f7667",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#221b08",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-surface-variant": "#4e4639",
+                        "background": "#fcf9f8",
+                        "on-background": "#1c1b1b",
+                        "on-secondary-container": "#656464",
+                        "on-tertiary-fixed-variant": "#50462f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .no-line-rule {
+            border: none !important;
+        }
+
+        .text-shadow-elegant {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .sharp-edge {
+            border-radius: 0px !important;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- Top Navigation -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-stone-950/80 backdrop-blur-md text-stone-800 dark:text-stone-100 font-['Noto_Serif'] tracking-tight text-lg no-line-rule transition-colors duration-500 flex justify-between items-center px-12 py-6 max-w-full">
+        <div class="text-2xl font-bold tracking-tighter text-primary dark:text-primary uppercase">LUXURY GOLD &amp;
+            SILVER
+        </div>
+        <div class="hidden md:flex gap-12 items-center">
+            <a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors"
+                href="#about">About</a>
+            <a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors"
+                href="#gallery">Gallery</a>
+            <a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors"
+                href="#contact">Contact</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <!-- Instagram -->
+            <a class="text-stone-800 dark:text-stone-100 hover:text-primary transition-colors duration-300 flex items-center"
+                href="https://www.instagram.com/luxury_jeweller.kl84?igsh=czkzNng4bzRrZjNr" target="_blank">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+            </a>
+            <!-- WhatsApp -->
+            <a class="text-stone-800 dark:text-stone-100 hover:text-emerald-600 transition-colors duration-300 flex items-center"
+                href="https://wa.me/916282755453" target="_blank">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+            </a>
+            <span id="menu-toggle"
+                class="material-symbols-outlined md:hidden cursor-pointer hover:opacity-70 transition-opacity"
+                data-icon="menu">menu</span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="hidden fixed inset-0 z-[60] bg-surface/95 dark:bg-stone-950/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-12 text-3xl font-headline tracking-tighter">
+        <button id="menu-close" class="absolute top-8 right-12 text-stone-800 dark:text-stone-100">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="hover:text-primary transition-colors" href="#about">About</a>
+        <a class="hover:text-primary transition-colors" href="#gallery">Gallery</a>
+        <a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+    </div>
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <!-- Enhanced Overlays for Text Legibility -->
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60 z-10"></div>
+
+            <video autoplay loop muted playsinline class="w-full h-full object-cover scale-100">
+                <source src="video/cinematic.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="relative z-20 text-center px-6">
+            <label class="block font-label text-primary-container uppercase tracking-[0.3em] text-sm mb-4">Established
+                Excellence</label>
+            <h1 class="font-headline text-white text-5xl md:text-8xl font-bold tracking-tighter leading-tight mb-8">
+                LUXURY GOLD &amp; SILVER</h1>
+            <p
+                class="font-headline italic text-surface-container-lowest text-xl md:text-3xl max-w-2xl mx-auto opacity-90">
+                Timeless Elegance in Every Grain</p>
+            <div class="mt-12 flex justify-center gap-6">
+                <a href="#gallery"
+                    class="bg-primary text-on-primary px-12 py-4 font-label uppercase tracking-widest hover:bg-surface hover:text-primary transition-all duration-500 sharp-edge">Explore
+                    Collection</a>
+            </div>
+        </div>
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+            <span class="material-symbols-outlined text-white text-3xl" data-icon="expand_more">expand_more</span>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-32 px-12 bg-surface-container">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="relative">
+                <div class="aspect-[4/5] bg-surface-container-highest overflow-hidden">
+                    <img alt="The Craft" class="w-full h-full object-cover transition-all duration-1000"
+                        src="images/bride.jpg" />
+                </div>
+            </div>
+            <div class="space-y-12">
+                <div class="space-y-4">
+                    <label class="font-label text-primary uppercase tracking-[0.2em] text-xs">Our Heritage</label>
+                    <h2 class="font-headline text-5xl md:text-6xl text-primary leading-tight">A Legacy of Radiance
+                    </h2>
+                </div>
+                <!-- Pull Quote -->
+                <div class="py-4 pl-8 border-l-2 border-primary/30">
+                    <p class="font-headline italic text-on-surface text-2xl leading-relaxed">"True luxury is
+                        not found in the loudness of display, but in the silence of perfection."</p>
+                </div>
+                <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                    <p>At the heart of Luxury Gold &amp; Silver lies a commitment to the extraordinary. We
+                        curate only the
+                        most exceptional gold and diamond jewelry, each piece serving as a testament to centuries of
+                        refined craftsmanship.</p>
+                    <p>Our artisans meticulously hand-select every stone and grain of precious metal, ensuring that the
+                        legacy of radiance we promise is carried through every facet and curve of our designs.</p>
+                </div>
+                <div class="pt-8">
+                    <a class="group inline-flex items-center gap-6 font-label text-primary uppercase tracking-widest"
+                        href="#">
+                        Discover the process
+                        <div class="w-24 h-[1px] bg-primary group-hover:w-32 transition-all duration-500"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Media Gallery (The Lookbook) -->
+    <section id="gallery" class="py-32 px-12 bg-surface">
+        <div class="mb-20 text-center">
+            <label class="font-label text-primary uppercase tracking-[0.2em] text-xs mb-4 block">Visual
+                Narrative</label>
+            <h2 class="font-headline text-4xl md:text-5xl text-primary">Gallery</h2>
+        </div>
+        <div class="max-w-full grid grid-cols-1 md:grid-cols-12 gap-6 md:h-[1228px]">
+            <!-- Asymmetric Grid -->
+            <div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low">
+                <img alt="Collection Piece I"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    data-alt="Elegant gold necklace with intricate filigree work displayed on a minimalist white ceramic bust with soft side lighting"
+                    src="images/gallery-1.webp" />
+                <div
+                    class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-12">
+                    <span class="text-white font-headline text-2xl"></span>
+                </div>
+            </div>
+            <div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+                <img alt="Collection Piece II"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    data-alt="Pair of diamond stud earrings catching light and creating spectral flares against a muted silk fabric background"
+                    src="images/gallery-2.webp" />
+                <div
+                    class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-12">
+                    <span class="text-white font-headline text-2xl"></span>
+                </div>
+            </div>
+            <div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+                <img alt="Collection Piece III"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    data-alt="Close-up of a silver artisan bracelet with hand-engraved patterns resting on a dark slate surface"
+                    src="images/gallery-3.webp" />
+            </div>
+            <div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+                <img alt="Collection Piece IV"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    data-alt="A collection of luxury gold rings stacked together on a polished wood surface with warm ambient light"
+                    src="images/gallery-4.webp" />
+            </div>
+            <div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+                <img alt="Collection Piece V"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    data-alt="A delicate silver chain with a pearl pendant lying softly across an open vintage book"
+                    src="images/gallery-5.webp" />
+            </div>
+        </div>
+    </section>
+    <!-- Contact & Info -->
+    <section id="contact" class="py-32 px-12 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-20">
+                <div class="max-w-2xl mx-auto">
+                    <label class="font-label text-primary uppercase tracking-[0.2em] text-xs mb-4 block">Connect</label>
+                    <h2 class="font-headline text-5xl md:text-6xl text-primary leading-tight">Inquiries &amp;
+                        Appointments</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16 items-start">
+                    <div class="space-y-6 group">
+                        <div
+                            class="w-16 h-16 bg-surface border border-outline-variant/20 flex items-center justify-center mx-auto transition-colors duration-500 group-hover:border-primary/40">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="location_on">location_on</span>
+                        </div>
+                        <div class="space-y-3">
+                            <span
+                                class="font-label uppercase tracking-widest text-[0.6875rem] text-on-surface-variant block">Atelier
+                                Address</span>
+                            <p class="font-headline text-xl leading-relaxed">OPP. BUDGET HYPER MARKET,<br>BYE PASS ROAD,
+                                SH28, Kondotty, Kerala 673638
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 group">
+                        <div
+                            class="w-16 h-16 bg-surface border border-outline-variant/20 flex items-center justify-center mx-auto transition-colors duration-500 group-hover:border-primary/40">
+                            <span class="material-symbols-outlined text-primary text-3xl" data-icon="mail">mail</span>
+                        </div>
+                        <div class="space-y-3">
+                            <span
+                                class="font-label uppercase tracking-widest text-[0.6875rem] text-on-surface-variant block">Email</span>
+                            <p
+                                class="font-headline text-xl underline underline-offset-8 decoration-primary/20 hover:decoration-primary/50 transition-all duration-500">
+                                luxurygoldandsilver1@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 group">
+                        <div
+                            class="w-16 h-16 bg-surface border border-outline-variant/20 flex items-center justify-center mx-auto transition-colors duration-500 group-hover:border-primary/40">
+                            <span class="material-symbols-outlined text-primary text-3xl" data-icon="call">call</span>
+                        </div>
+                        <div class="space-y-3">
+                            <span
+                                class="font-label uppercase tracking-widest text-[0.6875rem] text-on-surface-variant block">Phone</span>
+                            <p class="font-headline text-xl">+91 628 275 5453</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map Section -->
+    <section class="w-full">
+        <iframe allowfullscreen="" data-location="Kondotty" height="600" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.5521303502283!2d75.9627665!3d11.146695599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64ffa821bfccd%3A0xaa7b198d3ac0c930!2sLUXURY%20GOLD%20%26%20SILVER%20KONDOTTY!5e0!3m2!1sen!2sin!4v1775633610661!5m2!1sen!2sin"
+            style="border:0;" width="100%"></iframe>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-stone-50 dark:bg-stone-900 py-20 px-12 border-t border-stone-200/10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-12 max-w-7xl mx-auto">
+            <div class="space-y-4 text-center md:text-left">
+                <div class="font-['Noto_Serif'] text-xl italic text-primary dark:text-primary tracking-wider">LUXURY
+                    GOLD &amp; SILVER
+                </div>
+                <p
+                    class="font-['Manrope'] uppercase tracking-[0.15em] text-[0.6875rem] text-stone-500 leading-loose max-w-md">
+                    OPP. BUDGET HYPER MARKET, BYE PASS ROAD, SH28, Kondotty, Kerala 673638
+                </p>
+            </div>
+
+            <div class="flex gap-12 items-center">
+                <!-- Instagram -->
+                <a class="text-stone-500 hover:text-primary transition-all duration-500 flex items-center gap-3 font-['Manrope'] uppercase tracking-widest text-[0.6875rem]"
+                    href="https://www.instagram.com/luxury_jeweller.kl84?igsh=czkzNng4bzRrZjNr" target="_blank">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 128 128">
+                        <path
+                            d="M86,22H42c-11,0-20,9-20,20v44c0,11,9,20,20,20h44c11,0,20-9,20-20V42C106,31,97,22,86,22z M98,86c0,6.6-5.4,12-12,12H42 c-6.6,0-12-5.4-12-12V42c0-6.6,5.4-12,12-12h44c6.6,0,12,5.4,12,12V86z" />
+                        <path
+                            d="M64,44c-11,0-20,9-20,20s9,20,20,20s20-9,20-20S75,44,64,44z M64,76c-6.6,0-12-5.4-12-12s5.4-12,12-12s12,5.4,12,12 S70.6,76,64,76z" />
+                        <circle cx="89" cy="38" r="5" />
+                    </svg>
+                    Instagram
+                </a>
+
+                <!-- WhatsApp -->
+                <a class="text-stone-500 hover:text-emerald-600 transition-all duration-500 flex items-center gap-3 font-['Manrope'] uppercase tracking-widest text-[0.6875rem]"
+                    href="https://wa.me/916282755453" target="_blank">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793 0-.853.448-1.273.607-1.446.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.101-.177.211-.077.382.1.171.444.73.951 1.18.652.58 1.201.76 1.374.846.173.086.274.072.274.072s.101-.12.231-.299l.432-.6a.545.545 0 0 1 .531-.231c.171.058 1.084.511 1.272.607.188.095.312.14.358.217.045.077.045.445-.099.85z" />
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="mt-20 pt-12 border-t border-stone-200/10 text-center">
+            <p class="font-['Manrope'] uppercase tracking-[0.15em] text-[0.6875rem] text-stone-400">© 2024 LUXURY GOLD
+                &amp; SILVER. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        };
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+    </script>
+</body>
+
+</html>
