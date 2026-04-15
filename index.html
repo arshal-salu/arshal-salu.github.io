@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arshal Salu | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Arshal Salu - Designer & Developer specializing in premium web experiences.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#050505',
+                            dark: '#0A0A0B',
+                            accent: '#C5A059', // Gold from Jfactor
+                            fruitful: '#4A5D4E', // Muted green for Fruitful
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'reveal': 'reveal 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        reveal: {
+                            from: { opacity: 0, transform: 'translateY(20px)' },
+                            to: { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        .reveal-item {
+            opacity: 1;
+            /* Default to visible for robustness */
+            transform: translateY(0);
+            transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1), transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .reveal-item:not(.visible) {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        body {
+            background-color: #050505;
+            color: #fff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-brand-accent selection:text-brand-black">
+
+    <!-- Backgroun Decoration -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-brand-accent/5 rounded-full blur-[120px]"></div>
+        <div class="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-white/5 rounded-full blur-[120px]"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 px-6 py-6">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center glass px-8 py-4 rounded-full">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-8 h-8 bg-brand-accent rounded-lg flex items-center justify-center font-bold text-brand-black">
+                    AS</div>
+                <span class="font-display font-bold tracking-tight text-xl uppercase">Arshal Salu</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm uppercase tracking-widest text-zinc-400">
+                <a href="#work" class="hover:text-white transition-colors">Work</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="mailto:contact@arshal.com"
+                    class="px-6 py-2 bg-white text-brand-black rounded-full hover:bg-brand-accent transition-all">Hire
+                    Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center">
+            <span
+                class="reveal-item visible px-4 py-2 glass rounded-full text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-8">Available
+                for freelance</span>
+            <h1
+                class="reveal-item visible font-display text-6xl md:text-9xl font-extrabold tracking-tighter mb-8 leading-[0.9]">
+                <span class="gradient-text">Crafting Digital</span><br />
+                <span class="italic font-light text-zinc-500">Masterpieces</span>
+            </h1>
+            <p class="reveal-item visible max-w-2xl text-zinc-400 text-lg md:text-xl font-light leading-relaxed mb-12"
+                style="animation-delay: 0.2s">
+                A Designer & Full-stack Developer focused on creating minimalist, high-impact brands and immersive web
+                experiences.
+            </p>
+
+            <div class="reveal-item visible flex flex-col sm:flex-row gap-6" style="animation-delay: 0.4s">
+                <a href="#work"
+                    class="group px-10 py-5 bg-white text-brand-black rounded-full font-bold text-lg flex items-center gap-3 hover:bg-brand-accent transition-all">
+                    View My Work
+                    <span
+                        class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-12 animate-bounce">
+                <span class="material-symbols-outlined text-zinc-600">expand_more</span>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="py-32 px-6 max-w-7xl mx-auto">
+            <div class="mb-20 text-center">
+                <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">Selected Works</h2>
+                <p class="text-zinc-500 text-lg uppercase tracking-widest">A glimpse into curated excellence</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Project Card: Fruitful World -->
+                <a href="./fruitful/index.html"
+                    class="reveal-item group block relative overflow-hidden rounded-[2.5rem] bg-zinc-900/50 p-4 transition-all hover:bg-zinc-900 border border-white/5 h-full flex flex-col">
+                    <div class="relative aspect-video rounded-[2rem] overflow-hidden mb-8 bg-brand-fruitful/20">
+                        <img src="./fruitful/hero-horizontal.png" alt="Fruitful World"
+                            class="project-image w-full h-full object-cover transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                            <span class="text-white font-bold flex items-center gap-2">
+                                Explore Project <span class="material-symbols-outlined">north_east</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-display text-3xl font-bold mb-2">Fruitful World</h3>
+                                <p class="text-zinc-500 font-medium">Artisanal Spices & Premium Nuts</p>
+                            </div>
+                            <span
+                                class="px-3 py-1 glass rounded-full text-[10px] font-bold uppercase tracking-widest text-brand-accent">E-commerce</span>
+                        </div>
+                        <p class="text-zinc-500 font-light leading-relaxed flex-1">
+                            A high-fidelity artisanal food platform focused on visual storytelling and seamless checkout
+                            experiences for luxury spices and nuts.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Project Card: JAFACTOR -->
+                <a href="./jfactor/index.html"
+                    class="reveal-item group block relative overflow-hidden rounded-[2.5rem] bg-zinc-900/50 p-4 transition-all hover:bg-zinc-900 border border-white/5 h-full flex flex-col"
+                    style="animation-delay: 0.2s">
+                    <div class="relative aspect-video rounded-[2rem] overflow-hidden mb-8 bg-brand-accent/10">
+                        <img src="./jfactor/zenith_travel_suite_final.png" alt="JAFACTOR"
+                            class="project-image w-full h-full object-cover transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                            <span class="text-white font-bold flex items-center gap-2">
+                                Explore Project <span class="material-symbols-outlined">north_east</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-display text-3xl font-bold mb-2">JAFACTOR</h3>
+                                <p class="text-zinc-500 font-medium">Curated Global Excellence</p>
+                            </div>
+                            <span
+                                class="px-3 py-1 glass rounded-full text-[10px] font-bold uppercase tracking-widest text-brand-accent">Lifestyle</span>
+                        </div>
+                        <p class="text-zinc-500 font-light leading-relaxed flex-1">
+                            An immersive digital atelier showcasing curated lifestyle products, horology, and innovative
+                            tech with a focus on luxury aesthetics.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-40 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-display text-5xl md:text-8xl font-bold mb-12">Let's build something <span
+                        class="text-brand-accent italic">legendary</span>.</h2>
+                <p class="text-zinc-400 text-xl mb-12">I'm always looking for new challenges and interesting
+                    collaborations.</p>
+                <a href="mailto:contact@arshal.com"
+                    class="text-3xl md:text-5xl font-display font-bold border-b-4 border-brand-accent hover:border-white transition-all">contact@arshal.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 px-6 border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <p class="text-zinc-500 text-sm italic">&copy; 2024 Arshal Salu. All rights reserved.</p>
+            <div class="flex gap-8">
+                <a href="#" class="text-zinc-400 hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="text-zinc-400 hover:text-white transition-colors">LinkedIn</a>
+                <a href="#" class="text-zinc-400 hover:text-white transition-colors">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
