@@ -53,7 +53,7 @@
 
         .hero-gradient {
             background: radial-gradient(circle at top right, rgba(197, 160, 89, 0.08), transparent 40%),
-                        radial-gradient(circle at bottom left, rgba(5, 5, 5, 0.03), transparent 40%);
+                radial-gradient(circle at bottom left, rgba(5, 5, 5, 0.03), transparent 40%);
         }
 
         .button-premium {
@@ -111,13 +111,27 @@
         }
 
         @keyframes slideReveal {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes zoomReveal {
-            from { opacity: 0; transform: scale(1.1); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         .carousel-dot {
@@ -143,7 +157,7 @@
             padding-top: 0.75rem !important;
             padding-bottom: 0.75rem !important;
             background: rgba(251, 250, 248, 0.9);
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
         }
 
         .nav-link {
@@ -236,8 +250,15 @@
         }
 
         @keyframes slideIn {
-            from { opacity: 0; transform: translateX(20px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         html {
@@ -248,14 +269,16 @@
 
 <body class="bg-surface text-on-surface font-body antialiased selection:bg-accent/20">
     <!-- Header Section (TopNavBar) -->
-    <header id="main-header"
-        class="fixed top-0 w-full z-50 glass-header border-b border-black/5 font-headline">
+    <header id="main-header" class="fixed top-0 w-full z-50 glass-header border-b border-black/5 font-headline">
         <nav class="flex justify-between items-center px-6 md:px-12 py-5 max-w-7xl mx-auto">
             <div class="flex items-center gap-12 lg:gap-16">
                 <!-- Premium Menu Trigger -->
-                <button id="mobile-menu-trigger" class="flex items-center gap-3 p-2 hover:bg-black/5 rounded-full transition-all group">
-                    <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">menu</span>
-                    <span class="hidden sm:block text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Menu</span>
+                <button id="mobile-menu-trigger"
+                    class="flex items-center gap-3 p-2 hover:bg-black/5 rounded-full transition-all group">
+                    <span
+                        class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">menu</span>
+                    <span
+                        class="hidden sm:block text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Menu</span>
                 </button>
 
                 <a class="flex items-center transition-transform hover:scale-105" href="#">
@@ -264,39 +287,50 @@
 
                 <!-- Desktop Nav -->
                 <div class="hidden md:flex items-center gap-8 lg:gap-10">
-                    <a class="nav-link text-primary font-bold tracking-tight py-1 transition-all" href="#">Home</a>
-                    
+                    <a class="nav-link text-primary font-bold tracking-tight py-1 transition-all" href="#">Home
+                        hello</a>
+
                     <!-- Dropdown: Shop -->
                     <div class="relative group">
-                        <button class="nav-link text-on-surface-muted font-medium tracking-tight hover:text-primary transition-all py-1 flex items-center gap-1">
+                        <button
+                            class="nav-link text-on-surface-muted font-medium tracking-tight hover:text-primary transition-all py-1 flex items-center gap-1">
                             Shop
                             <span class="material-symbols-outlined text-sm">expand_more</span>
                         </button>
-                        <div class="dropdown-menu absolute top-full left-0 w-64 bg-white border border-black/5 rounded-3xl shadow-2xl p-6 mt-4 backdrop-blur-3xl">
+                        <div
+                            class="dropdown-menu absolute top-full left-0 w-64 bg-white border border-black/5 rounded-3xl shadow-2xl p-6 mt-4 backdrop-blur-3xl">
                             <div class="space-y-4">
                                 <a href="#" class="block group/item">
-                                    <p class="font-bold text-primary group-hover/item:text-accent transition-colors">Digital Atelier</p>
-                                    <p class="text-[10px] text-on-surface-muted uppercase tracking-widest mt-1">Premium Electronics</p>
+                                    <p class="font-bold text-primary group-hover/item:text-accent transition-colors">
+                                        Digital Atelier</p>
+                                    <p class="text-[10px] text-on-surface-muted uppercase tracking-widest mt-1">Premium
+                                        Electronics</p>
                                 </a>
                                 <a href="#" class="block group/item">
-                                    <p class="font-bold text-primary group-hover/item:text-accent transition-colors">Modern Horology</p>
-                                    <p class="text-[10px] text-on-surface-muted uppercase tracking-widest mt-1">Bespoke Timepieces</p>
+                                    <p class="font-bold text-primary group-hover/item:text-accent transition-colors">
+                                        Modern Horology</p>
+                                    <p class="text-[10px] text-on-surface-muted uppercase tracking-widest mt-1">Bespoke
+                                        Timepieces</p>
                                 </a>
                                 <a href="#" class="block group/item">
-                                    <p class="font-bold text-primary group-hover/item:text-accent transition-colors">Lifestyle Design</p>
-                                    <p class="text-[10px] text-on-surface-muted uppercase tracking-widest mt-1">Curated Interiors</p>
+                                    <p class="font-bold text-primary group-hover/item:text-accent transition-colors">
+                                        Lifestyle Design</p>
+                                    <p class="text-[10px] text-on-surface-muted uppercase tracking-widest mt-1">Curated
+                                        Interiors</p>
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <a class="nav-link text-on-surface-muted font-medium tracking-tight hover:text-primary transition-all py-1" href="#about-atelier">About</a>
+                    <a class="nav-link text-on-surface-muted font-medium tracking-tight hover:text-primary transition-all py-1"
+                        href="#about-atelier">About</a>
                 </div>
             </div>
 
             <div class="flex items-center gap-4 md:gap-8">
                 <!-- Search -->
-                <div class="search-container hidden lg:flex items-center bg-white border border-black/5 px-5 py-2.5 rounded-full shadow-sm w-64">
+                <div
+                    class="search-container hidden lg:flex items-center bg-white border border-black/5 px-5 py-2.5 rounded-full shadow-sm w-64">
                     <span class="material-symbols-outlined text-on-surface-muted text-lg">search</span>
                     <input
                         class="bg-transparent border-none focus:ring-0 text-sm ml-2 w-full text-on-surface placeholder:text-on-surface-muted"
@@ -308,11 +342,13 @@
                         <span class="material-symbols-outlined text-primary">search</span>
                     </button>
                     <button id="cart-trigger" class="p-2.5 hover:bg-black/5 rounded-full transition-all relative group">
-                        <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">shopping_cart</span>
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">shopping_cart</span>
                         <span id="cart-badge"
                             class="absolute top-0 right-0 w-4.5 h-4.5 accent-gradient text-white text-[10px] flex items-center justify-center rounded-full font-bold shadow-lg shadow-accent/20">0</span>
                     </button>
-                    <button id="auth-trigger" class="hidden sm:block p-2.5 hover:bg-black/5 rounded-full transition-all">
+                    <button id="auth-trigger"
+                        class="hidden sm:block p-2.5 hover:bg-black/5 rounded-full transition-all">
                         <span class="material-symbols-outlined text-primary">person</span>
                     </button>
                 </div>
@@ -321,37 +357,51 @@
     </header>
 
     <!-- Immersive Menu Drawer -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/60 z-[60] backdrop-blur-xl pointer-events-none opacity-0 transition-all duration-700"></div>
-    <div id="mobile-menu" class="fixed inset-0 w-full h-full z-[70] shadow-2xl flex flex-col font-headline overflow-hidden">
-        <div class="px-6 md:px-12 py-8 flex items-center justify-between border-b border-black/5 bg-white/50 backdrop-blur-md">
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 bg-black/60 z-[60] backdrop-blur-xl pointer-events-none opacity-0 transition-all duration-700">
+    </div>
+    <div id="mobile-menu"
+        class="fixed inset-0 w-full h-full z-[70] shadow-2xl flex flex-col font-headline overflow-hidden">
+        <div
+            class="px-6 md:px-12 py-8 flex items-center justify-between border-b border-black/5 bg-white/50 backdrop-blur-md">
             <img src="jafactor-make-a-text-logo (1).avif" class="h-8 w-auto" alt="Logo">
             <div class="flex items-center gap-8">
-                <span class="hidden md:block text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface-muted">Curated Global Access</span>
-                <button id="mobile-menu-close" class="w-14 h-14 rounded-full hover:bg-black/5 flex items-center justify-center transition-all bg-white shadow-xl">
+                <span
+                    class="hidden md:block text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface-muted">Curated
+                    Global Access</span>
+                <button id="mobile-menu-close"
+                    class="w-14 h-14 rounded-full hover:bg-black/5 flex items-center justify-center transition-all bg-white shadow-xl">
                     <span class="material-symbols-outlined text-primary">close</span>
                 </button>
             </div>
         </div>
-        
+
         <div class="flex-1 flex flex-col lg:flex-row">
             <!-- Primary Navigation -->
             <div class="flex-1 p-8 md:p-20 flex flex-col justify-center bg-white">
                 <div class="space-y-4 md:space-y-8">
-                    <p class="menu-item text-[10px] uppercase tracking-[0.4em] text-accent font-bold mb-8 block transition-delay-[100ms]">The Curation</p>
+                    <p
+                        class="menu-item text-[10px] uppercase tracking-[0.4em] text-accent font-bold mb-8 block transition-delay-[100ms]">
+                        The Curation</p>
                     <div class="flex flex-col gap-2 md:gap-4">
-                        <a href="#" class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[200ms] uppercase tracking-wider">Home</a>
-                        <a href="#shop-catalog" onclick="toggleMobileMenu(false)" class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[300ms] uppercase tracking-wider">Collection</a>
-                        <a href="#about-atelier" onclick="toggleMobileMenu(false)" class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[400ms] uppercase tracking-wider">Atelier</a>
-                        <a href="#faq" onclick="toggleMobileMenu(false)" class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[500ms] uppercase tracking-wider">Concierge</a>
+                        <a href="#"
+                            class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[200ms] uppercase tracking-wider">Home</a>
+                        <a href="#shop-catalog" onclick="toggleMobileMenu(false)"
+                            class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[300ms] uppercase tracking-wider">Collection</a>
+                        <a href="#about-atelier" onclick="toggleMobileMenu(false)"
+                            class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[400ms] uppercase tracking-wider">Atelier</a>
+                        <a href="#faq" onclick="toggleMobileMenu(false)"
+                            class="menu-item text-2xl md:text-3xl font-bold text-primary hover:text-accent transition-all duration-500 hover:translate-x-3 transition-delay-[500ms] uppercase tracking-wider">Concierge</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Secondary Navigation / Concierge -->
             <div class="w-full lg:w-[450px] bg-luxury-dark p-8 md:p-20 flex flex-col justify-center text-white">
                 <div class="space-y-12">
                     <div class="menu-item transition-delay-[600ms]">
-                        <p class="text-[10px] uppercase tracking-[0.4em] text-accent font-bold mb-6 block">Support Rituals</p>
+                        <p class="text-[10px] uppercase tracking-[0.4em] text-accent font-bold mb-6 block">Support
+                            Rituals</p>
                         <div class="flex flex-col gap-4 font-light text-white/50">
                             <a href="#" class="hover:text-white transition-colors text-lg">Order Tracking</a>
                             <a href="#" class="hover:text-white transition-colors text-lg">Shipping & Returns</a>
@@ -359,10 +409,12 @@
                             <a href="#" class="hover:text-white transition-colors text-lg">Bespoke Inquiries</a>
                         </div>
                     </div>
-                    
+
                     <div class="menu-item transition-delay-[700ms] pt-8 border-t border-white/10">
-                        <p class="text-[10px] uppercase tracking-[0.4em] text-accent font-bold mb-6 block">Member Entrance</p>
-                        <button id="mobile-auth-trigger-v2" class="w-full button-premium text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3">
+                        <p class="text-[10px] uppercase tracking-[0.4em] text-accent font-bold mb-6 block">Member
+                            Entrance</p>
+                        <button id="mobile-auth-trigger-v2"
+                            class="w-full button-premium text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3">
                             Atelier Login
                             <span class="material-symbols-outlined text-sm">login</span>
                         </button>
@@ -371,10 +423,12 @@
                     <div class="menu-item transition-delay-[800ms] pt-8">
                         <p class="text-[10px] uppercase tracking-[0.4em] text-accent font-bold mb-6 block">Presence</p>
                         <div class="flex gap-6">
-                            <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
+                            <a href="#"
+                                class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
+                            <a href="#"
+                                class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
@@ -387,28 +441,36 @@
         <!-- Hero Section -->
         <section id="hero-carousel" class="relative h-[95vh] overflow-hidden">
             <div class="absolute inset-0 hero-gradient z-0"></div>
-            
+
             <!-- Slide 1: Digital Atelier -->
             <div class="hero-slide active" data-index="0">
-                <div class="max-w-7xl mx-auto px-12 h-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
+                <div
+                    class="max-w-7xl mx-auto px-12 h-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
                     <div class="lg:col-span-6 reveal-content">
-                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Curated Excellence — 01</span>
-                        <h1 class="font-headline text-6xl md:text-8xl font-extrabold text-primary leading-[1] tracking-tight mb-8">
+                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Curated
+                            Excellence — 01</span>
+                        <h1
+                            class="font-headline text-6xl md:text-8xl font-extrabold text-primary leading-[1] tracking-tight mb-8">
                             The Art of <span class="text-on-surface-muted italic font-light">Elevated</span> Living.
                         </h1>
                         <p class="text-on-surface-muted text-xl mb-12 leading-relaxed max-w-lg font-light">
-                            Discover a boutique collection where modern innovation meets timeless design. Handpicked for the digital atelier.
+                            Discover a boutique collection where modern innovation meets timeless design. Handpicked for
+                            the digital atelier.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-6">
-                            <button class="button-premium text-white px-10 py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3">
+                            <button
+                                class="button-premium text-white px-10 py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3">
                                 Shop Collection
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
                         </div>
                     </div>
                     <div class="lg:col-span-6 relative h-[600px] reveal-image">
-                        <div class="absolute inset-0 rounded-[3rem] overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)] group">
-                            <img alt="premium projector" class="w-full h-full object-cover transition-all duration-1000 scale-105" src="premium_portable_projector_1776258521982.png" />
+                        <div
+                            class="absolute inset-0 rounded-[3rem] overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)] group">
+                            <img alt="premium projector"
+                                class="w-full h-full object-cover transition-all duration-1000 scale-105"
+                                src="premium_portable_projector_1776258521982.png" />
                         </div>
                     </div>
                 </div>
@@ -416,17 +478,22 @@
 
             <!-- Slide 2: Modern Horology -->
             <div class="hero-slide" data-index="1">
-                <div class="max-w-7xl mx-auto px-12 h-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
+                <div
+                    class="max-w-7xl mx-auto px-12 h-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
                     <div class="lg:col-span-6 reveal-content">
-                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Bespoke Horology — 02</span>
-                        <h1 class="font-headline text-6xl md:text-8xl font-extrabold text-primary leading-[1] tracking-tight mb-8">
+                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Bespoke
+                            Horology — 02</span>
+                        <h1
+                            class="font-headline text-6xl md:text-8xl font-extrabold text-primary leading-[1] tracking-tight mb-8">
                             Time <span class="text-on-surface-muted italic font-light">Refined</span> by Design.
                         </h1>
                         <p class="text-on-surface-muted text-xl mb-12 leading-relaxed max-w-lg font-light">
-                            Explore our master-crafted timepieces that blend heritage craftsmanship with contemporary minimalism.
+                            Explore our master-crafted timepieces that blend heritage craftsmanship with contemporary
+                            minimalism.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-6">
-                            <button class="button-premium text-white px-10 py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3">
+                            <button
+                                class="button-premium text-white px-10 py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3">
                                 Explore Watches
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
@@ -434,7 +501,8 @@
                     </div>
                     <div class="lg:col-span-6 relative h-[600px] reveal-image">
                         <div class="absolute inset-0 rounded-[3rem] overflow-hidden shadow-2xl">
-                            <img alt="luxury led mask" class="w-full h-full object-cover" src="luxury_led_mask_1776258538282.png" />
+                            <img alt="luxury led mask" class="w-full h-full object-cover"
+                                src="luxury_led_mask_1776258538282.png" />
                         </div>
                     </div>
                 </div>
@@ -442,17 +510,22 @@
 
             <!-- Slide 3: Lifestyle Curation -->
             <div class="hero-slide" data-index="2">
-                <div class="max-w-7xl mx-auto px-12 h-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
+                <div
+                    class="max-w-7xl mx-auto px-12 h-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
                     <div class="lg:col-span-6 reveal-content">
-                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Lifestyle Atelier — 03</span>
-                        <h1 class="font-headline text-6xl md:text-8xl font-extrabold text-primary leading-[1] tracking-tight mb-8">
+                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Lifestyle
+                            Atelier — 03</span>
+                        <h1
+                            class="font-headline text-6xl md:text-8xl font-extrabold text-primary leading-[1] tracking-tight mb-8">
                             Spaces with <span class="text-on-surface-muted italic font-light">Soul</span>.
                         </h1>
                         <p class="text-on-surface-muted text-xl mb-12 leading-relaxed max-w-lg font-light">
-                            From artisanal kitchenware to ergonomic office essentials. Elevate every corner of your daily ritual.
+                            From artisanal kitchenware to ergonomic office essentials. Elevate every corner of your
+                            daily ritual.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-6">
-                            <button class="button-premium text-white px-10 py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3">
+                            <button
+                                class="button-premium text-white px-10 py-5 rounded-full font-bold text-lg flex items-center justify-center gap-3">
                                 Shop Lifestyle
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
@@ -460,7 +533,8 @@
                     </div>
                     <div class="lg:col-span-6 relative h-[600px] reveal-image">
                         <div class="absolute inset-0 rounded-[3rem] overflow-hidden shadow-2xl">
-                            <img alt="desk tech" class="w-full h-full object-cover" src="minimalist_desk_tech_1776258555472.png" />
+                            <img alt="desk tech" class="w-full h-full object-cover"
+                                src="minimalist_desk_tech_1776258555472.png" />
                         </div>
                     </div>
                 </div>
@@ -477,8 +551,10 @@
         <!-- Global Recognition Bar -->
         <section class="py-16 bg-white border-b border-black/5 overflow-hidden">
             <div class="max-w-7xl mx-auto px-12">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-12 opacity-40 hover:opacity-100 transition-opacity duration-700">
-                    <span class="text-[9px] font-bold uppercase tracking-[0.4em] text-primary whitespace-nowrap">As featured and curated in:</span>
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-12 opacity-40 hover:opacity-100 transition-opacity duration-700">
+                    <span class="text-[9px] font-bold uppercase tracking-[0.4em] text-primary whitespace-nowrap">As
+                        featured and curated in:</span>
                     <div class="flex flex-wrap justify-center md:justify-end items-center gap-12 md:gap-20 grayscale">
                         <span class="font-headline text-2xl font-black tracking-tighter">WIRED</span>
                         <span class="font-headline text-2xl font-bold tracking-tight italic">GQ</span>
@@ -494,21 +570,28 @@
             <div class="max-w-7xl mx-auto px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center mb-40">
                     <div class="reveal-up">
-                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-8 block">Our Philosophy</span>
-                        <h2 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight mb-10 leading-[0.95]">
-                            A Vision of <span class="italic font-light text-on-surface-muted">Universal</span> Excellence.
+                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-8 block">Our
+                            Philosophy</span>
+                        <h2
+                            class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight mb-10 leading-[0.95]">
+                            A Vision of <span class="italic font-light text-on-surface-muted">Universal</span>
+                            Excellence.
                         </h2>
                         <p class="text-on-surface-muted text-xl leading-relaxed font-light mb-12">
-                            JAFACTOR is more than a boutique; it is a curated atelier for the modern individual. We bridge the gap between high-performance innovation and timeless sculptural beauty across every category of life.
+                            JAFACTOR is more than a boutique; it is a curated atelier for the modern individual. We
+                            bridge the gap between high-performance innovation and timeless sculptural beauty across
+                            every category of life.
                         </p>
                         <div class="flex items-center gap-12 border-t border-black/5 pt-12">
                             <div>
                                 <p class="text-3xl font-extrabold text-primary mb-1">150+</p>
-                                <p class="text-[10px] uppercase tracking-widest text-on-surface-muted font-bold">Curated Drops</p>
+                                <p class="text-[10px] uppercase tracking-widest text-on-surface-muted font-bold">Curated
+                                    Drops</p>
                             </div>
                             <div>
                                 <p class="text-3xl font-extrabold text-primary mb-1">03</p>
-                                <p class="text-[10px] uppercase tracking-widest text-on-surface-muted font-bold">Core Pillars</p>
+                                <p class="text-[10px] uppercase tracking-widest text-on-surface-muted font-bold">Core
+                                    Pillars</p>
                             </div>
                         </div>
                     </div>
@@ -524,32 +607,40 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <!-- Pillar 1: Technology -->
-                    <div class="group p-10 bg-white rounded-[3rem] border border-black/5 hover:border-accent/30 transition-all duration-700 reveal-up">
-                        <div class="w-16 h-16 bg-surface rounded-2xl flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-all duration-500 mb-8">
+                    <div
+                        class="group p-10 bg-white rounded-[3rem] border border-black/5 hover:border-accent/30 transition-all duration-700 reveal-up">
+                        <div
+                            class="w-16 h-16 bg-surface rounded-2xl flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-all duration-500 mb-8">
                             <span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
                         </div>
                         <h3 class="text-2xl font-bold text-primary mb-6">Digital Atelier</h3>
                         <p class="text-on-surface-muted font-light leading-relaxed mb-8">
-                            High-performance electronics selected for their minimalist interface and unparalleled engineering.
+                            High-performance electronics selected for their minimalist interface and unparalleled
+                            engineering.
                         </p>
                         <div class="h-1 w-0 bg-accent group-hover:w-full transition-all duration-700"></div>
                     </div>
 
                     <!-- Pillar 2: Horology -->
-                    <div class="group p-10 bg-white rounded-[3rem] border border-black/5 hover:border-accent/30 transition-all duration-700 reveal-up" style="transition-delay: 0.1s;">
-                        <div class="w-16 h-16 bg-surface rounded-2xl flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-all duration-500 mb-8">
+                    <div class="group p-10 bg-white rounded-[3rem] border border-black/5 hover:border-accent/30 transition-all duration-700 reveal-up"
+                        style="transition-delay: 0.1s;">
+                        <div
+                            class="w-16 h-16 bg-surface rounded-2xl flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-all duration-500 mb-8">
                             <span class="material-symbols-outlined text-3xl">watch</span>
                         </div>
                         <h3 class="text-2xl font-bold text-primary mb-6">Modern Horology</h3>
                         <p class="text-on-surface-muted font-light leading-relaxed mb-8">
-                            Heritage-inspired timepieces that transform the utility of time into a statement of sculptural presence.
+                            Heritage-inspired timepieces that transform the utility of time into a statement of
+                            sculptural presence.
                         </p>
                         <div class="h-1 w-0 bg-accent group-hover:w-full transition-all duration-700"></div>
                     </div>
 
                     <!-- Pillar 3: Lifestyle -->
-                    <div class="group p-10 bg-white rounded-[3rem] border border-black/5 hover:border-accent/30 transition-all duration-700 reveal-up" style="transition-delay: 0.2s;">
-                        <div class="w-16 h-16 bg-surface rounded-2xl flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-all duration-500 mb-8">
+                    <div class="group p-10 bg-white rounded-[3rem] border border-black/5 hover:border-accent/30 transition-all duration-700 reveal-up"
+                        style="transition-delay: 0.2s;">
+                        <div
+                            class="w-16 h-16 bg-surface rounded-2xl flex items-center justify-center text-primary group-hover:bg-accent group-hover:text-white transition-all duration-500 mb-8">
                             <span class="material-symbols-outlined text-3xl">architecture</span>
                         </div>
                         <h3 class="text-2xl font-bold text-primary mb-6">Curated Lifestyle</h3>
@@ -567,41 +658,56 @@
             <div class="max-w-7xl mx-auto px-12">
                 <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8 reveal-up">
                     <div class="max-w-2xl">
-                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">The Catalog</span>
+                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">The
+                            Catalog</span>
                         <h2 class="font-headline text-5xl md:text-6xl font-extrabold text-primary tracking-tight mb-8">
                             Curated Drops
                         </h2>
                         <p class="text-on-surface-variant text-lg font-light leading-relaxed">
-                            Explore our latest selection of handpicked masterpieces, where every object is chosen for its innovation and aesthetic presence.
+                            Explore our latest selection of handpicked masterpieces, where every object is chosen for
+                            its innovation and aesthetic presence.
                         </p>
                     </div>
                 </div>
 
                 <!-- Category Filters -->
                 <div class="flex flex-wrap items-center gap-8 mb-20 reveal-up border-b border-black/5 pb-10">
-                    <button onclick="filterCatalog('all')" class="filter-btn active text-[10px] font-bold uppercase tracking-[0.2em] text-primary relative pb-4 transition-all group">
+                    <button onclick="filterCatalog('all')"
+                        class="filter-btn active text-[10px] font-bold uppercase tracking-[0.2em] text-primary relative pb-4 transition-all group">
                         All Collections
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-100 transition-transform origin-left"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-100 transition-transform origin-left">
+                        </div>
                     </button>
-                    <button onclick="filterCatalog('tech')" class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-muted relative pb-4 transition-all hover:text-primary group">
+                    <button onclick="filterCatalog('tech')"
+                        class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-muted relative pb-4 transition-all hover:text-primary group">
                         Digital Atelier
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left">
+                        </div>
                     </button>
-                    <button onclick="filterCatalog('wellness')" class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-muted relative pb-4 transition-all hover:text-primary group">
+                    <button onclick="filterCatalog('wellness')"
+                        class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-muted relative pb-4 transition-all hover:text-primary group">
                         Modern Wellness
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left">
+                        </div>
                     </button>
-                    <button onclick="filterCatalog('lifestyle')" class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-muted relative pb-4 transition-all hover:text-primary group">
+                    <button onclick="filterCatalog('lifestyle')"
+                        class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-muted relative pb-4 transition-all hover:text-primary group">
                         Lifestyle Design
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left">
+                        </div>
                     </button>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <!-- Product Card 1 -->
-                    <div
-                        data-id="1" data-name="Elite Sonic Pods" data-price="199.00" data-category="tech" data-image="premium_earbuds_gold_black_1776258581837.png"
+                    <div data-id="1" data-name="Elite Sonic Pods" data-price="199.00" data-category="tech"
+                        data-image="premium_earbuds_gold_black_1776258581837.png"
                         class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up">
-                        <div class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
+                        <div
+                            class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
                             <img alt="earbuds"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0"
                                 src="premium_earbuds_gold_black_1776258581837.png" />
@@ -621,8 +727,7 @@
                                 <div>
                                     <span
                                         class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Technology</span>
-                                    <h3
-                                        class="font-headline text-2xl font-bold text-primary tracking-tight">
+                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">
                                         Sonic-X Noir</h3>
                                 </div>
                                 <span class="text-2xl font-light text-primary tracking-tighter">$299.00</span>
@@ -630,10 +735,12 @@
                         </div>
                     </div>
                     <!-- Product Card 2 -->
-                    <div
-                        data-id="2" data-name="Lumina 4K Projector" data-price="449.00" data-category="tech" data-image="premium_portable_projector_1776258521982.png"
-                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up" style="transition-delay: 0.1s;">
-                        <div class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
+                    <div data-id="2" data-name="Lumina 4K Projector" data-price="449.00" data-category="tech"
+                        data-image="premium_portable_projector_1776258521982.png"
+                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up"
+                        style="transition-delay: 0.1s;">
+                        <div
+                            class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
                             <img alt="projector"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0"
                                 src="premium_portable_projector_1776258521982.png" />
@@ -657,8 +764,7 @@
                                 <div>
                                     <span
                                         class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Horology</span>
-                                    <h3
-                                        class="font-headline text-2xl font-bold text-primary tracking-tight">
+                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">
                                         Titanium Shell</h3>
                                 </div>
                                 <span class="text-2xl font-light text-primary tracking-tighter">$185.00</span>
@@ -666,10 +772,12 @@
                         </div>
                     </div>
                     <!-- Product Card 3 -->
-                    <div
-                        data-id="3" data-name="Aura Wellness Mask" data-price="289.00" data-category="wellness" data-image="luxury_led_mask_1776258538282.png"
-                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up" style="transition-delay: 0.2s;">
-                        <div class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
+                    <div data-id="3" data-name="Aura Wellness Mask" data-price="289.00" data-category="wellness"
+                        data-image="luxury_led_mask_1776258538282.png"
+                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up"
+                        style="transition-delay: 0.2s;">
+                        <div
+                            class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
                             <img alt="led mask"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0"
                                 src="luxury_led_mask_1776258538282.png" />
@@ -689,8 +797,7 @@
                                 <div>
                                     <span
                                         class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Lifestyle</span>
-                                    <h3
-                                        class="font-headline text-2xl font-bold text-primary tracking-tight">
+                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">
                                         Verve Alchemist</h3>
                                 </div>
                                 <span class="text-2xl font-light text-primary tracking-tighter">$54.99</span>
@@ -699,10 +806,12 @@
                     </div>
 
                     <!-- Product Card 4: Chronos Watch -->
-                    <div
-                        data-id="4" data-name="Chronos Watch" data-price="349.00" data-category="tech" data-image="chronos_watch_final.png"
-                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up" style="transition-delay: 0.1s;">
-                        <div class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
+                    <div data-id="4" data-name="Chronos Watch" data-price="349.00" data-category="tech"
+                        data-image="chronos_watch_final.png"
+                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up"
+                        style="transition-delay: 0.1s;">
+                        <div
+                            class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
                             <img alt="watch"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0"
                                 src="chronos_watch_final.png" />
@@ -720,8 +829,10 @@
                         <div class="px-4 pb-4">
                             <div class="flex justify-between items-end">
                                 <div>
-                                    <span class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Horology</span>
-                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">Chronos Minimal</h3>
+                                    <span
+                                        class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Horology</span>
+                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">Chronos
+                                        Minimal</h3>
                                 </div>
                                 <span class="text-2xl font-light text-primary tracking-tighter">$349.00</span>
                             </div>
@@ -729,10 +840,12 @@
                     </div>
 
                     <!-- Product Card 5: Zenith Suite -->
-                    <div
-                        data-id="5" data-name="Zenith Travel Suite" data-price="125.00" data-category="lifestyle" data-image="zenith_travel_suite_final.png"
-                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up" style="transition-delay: 0.2s;">
-                        <div class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
+                    <div data-id="5" data-name="Zenith Travel Suite" data-price="125.00" data-category="lifestyle"
+                        data-image="zenith_travel_suite_final.png"
+                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up"
+                        style="transition-delay: 0.2s;">
+                        <div
+                            class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
                             <img alt="travel suite"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0"
                                 src="zenith_travel_suite_final.png" />
@@ -750,8 +863,10 @@
                         <div class="px-4 pb-4">
                             <div class="flex justify-between items-end">
                                 <div>
-                                    <span class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Lifestyle</span>
-                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">Zenith Suite</h3>
+                                    <span
+                                        class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Lifestyle</span>
+                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">Zenith
+                                        Suite</h3>
                                 </div>
                                 <span class="text-2xl font-light text-primary tracking-tighter">$125.00</span>
                             </div>
@@ -759,10 +874,12 @@
                     </div>
 
                     <!-- Product Card 6: Elara Lamp -->
-                    <div
-                        data-id="6" data-name="Elara Smart Lamp" data-price="189.00" data-category="lifestyle" data-image="elara_smart_lamp_final.png"
-                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up" style="transition-delay: 0.3s;">
-                        <div class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
+                    <div data-id="6" data-name="Elara Smart Lamp" data-price="189.00" data-category="lifestyle"
+                        data-image="elara_smart_lamp_final.png"
+                        class="product-card group bg-white p-2 rounded-3xl transition-all duration-700 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] reveal-up"
+                        style="transition-delay: 0.3s;">
+                        <div
+                            class="relative aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 group-hover:shadow-2xl transition-all duration-700">
                             <img alt="lamp"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[0.3] group-hover:grayscale-0"
                                 src="elara_smart_lamp_final.png" />
@@ -780,8 +897,10 @@
                         <div class="px-4 pb-4">
                             <div class="flex justify-between items-end">
                                 <div>
-                                    <span class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Lifestyle</span>
-                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">Elara Sculpt</h3>
+                                    <span
+                                        class="text-[9px] font-bold text-accent tracking-[0.2em] uppercase mb-2 block">Lifestyle</span>
+                                    <h3 class="font-headline text-2xl font-bold text-primary tracking-tight">Elara
+                                        Sculpt</h3>
                                 </div>
                                 <span class="text-2xl font-light text-primary tracking-tighter">$189.00</span>
                             </div>
@@ -795,21 +914,28 @@
         <section class="py-40 bg-white overflow-hidden border-t border-black/5">
             <div class="max-w-7xl mx-auto px-12">
                 <div class="text-center mb-24 reveal-up">
-                    <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-8 block">Global Community</span>
-                    <h2 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight mb-10 leading-tight">
-                        The Collective <span class="italic font-light text-on-surface-muted underline decoration-accent/30">Voice.</span>
+                    <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-8 block">Global
+                        Community</span>
+                    <h2
+                        class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight mb-10 leading-tight">
+                        The Collective <span
+                            class="italic font-light text-on-surface-muted underline decoration-accent/30">Voice.</span>
                     </h2>
                 </div>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <!-- Testimonial 1 -->
                     <div class="reveal-up" style="transition-delay: 0.1s;">
-                        <div class="p-12 rounded-[3.5rem] bg-surface-container-lowest border border-black/5 hover:shadow-2xl transition-all duration-700 h-full flex flex-col justify-between group">
+                        <div
+                            class="p-12 rounded-[3.5rem] bg-surface-container-lowest border border-black/5 hover:shadow-2xl transition-all duration-700 h-full flex flex-col justify-between group">
                             <p class="text-xl md:text-2xl font-light italic leading-relaxed text-primary/80 mb-12">
-                                "The Lumina projector has completely redefined how I perceive digital space. A sculptural masterpiece."
+                                "The Lumina projector has completely redefined how I perceive digital space. A
+                                sculptural masterpiece."
                             </p>
                             <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-full accent-gradient flex items-center justify-center text-white text-xs font-bold font-headline shadow-lg">MA</div>
+                                <div
+                                    class="w-12 h-12 rounded-full accent-gradient flex items-center justify-center text-white text-xs font-bold font-headline shadow-lg">
+                                    MA</div>
                                 <div>
                                     <p class="text-sm font-extrabold text-primary">M. Akerman</p>
                                     <p class="text-[9px] uppercase tracking-widest text-accent font-bold">Zurich, CH</p>
@@ -819,12 +945,16 @@
                     </div>
                     <!-- Testimonial 2 -->
                     <div class="reveal-up" style="transition-delay: 0.2s;">
-                        <div class="p-12 rounded-[3.5rem] bg-surface-container-lowest border border-black/5 hover:shadow-2xl transition-all duration-700 h-full flex flex-col justify-between group">
+                        <div
+                            class="p-12 rounded-[3.5rem] bg-surface-container-lowest border border-black/5 hover:shadow-2xl transition-all duration-700 h-full flex flex-col justify-between group">
                             <p class="text-xl md:text-2xl font-light italic leading-relaxed text-primary/80 mb-12">
-                                "Quiet luxury at its absolute finest. The attention to detail in the Atelier selection is unparalleled."
+                                "Quiet luxury at its absolute finest. The attention to detail in the Atelier selection
+                                is unparalleled."
                             </p>
                             <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold font-headline shadow-lg">KT</div>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold font-headline shadow-lg">
+                                    KT</div>
                                 <div>
                                     <p class="text-sm font-extrabold text-primary">K. Tanaka</p>
                                     <p class="text-[9px] uppercase tracking-widest text-accent font-bold">Tokyo, JP</p>
@@ -834,15 +964,20 @@
                     </div>
                     <!-- Testimonial 3 -->
                     <div class="reveal-up" style="transition-delay: 0.3s;">
-                        <div class="p-12 rounded-[3.5rem] bg-surface-container-lowest border border-black/5 hover:shadow-2xl transition-all duration-700 h-full flex flex-col justify-between group">
+                        <div
+                            class="p-12 rounded-[3.5rem] bg-surface-container-lowest border border-black/5 hover:shadow-2xl transition-all duration-700 h-full flex flex-col justify-between group">
                             <p class="text-xl md:text-2xl font-light italic leading-relaxed text-primary/80 mb-12">
-                                "Finally, a boutique that understands the intersection of high-performance tech and minimal art."
+                                "Finally, a boutique that understands the intersection of high-performance tech and
+                                minimal art."
                             </p>
                             <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-full accent-gradient flex items-center justify-center text-white text-xs font-bold font-headline shadow-lg">LB</div>
+                                <div
+                                    class="w-12 h-12 rounded-full accent-gradient flex items-center justify-center text-white text-xs font-bold font-headline shadow-lg">
+                                    LB</div>
                                 <div>
                                     <p class="text-sm font-extrabold text-primary">L. Beaumont</p>
-                                    <p class="text-[9px] uppercase tracking-widest text-accent font-bold">New York, US</p>
+                                    <p class="text-[9px] uppercase tracking-widest text-accent font-bold">New York, US
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -858,22 +993,28 @@
             </div>
             <div class="max-w-4xl mx-auto px-12 text-center relative z-10">
                 <div class="reveal-up">
-                    <span class="text-accent font-bold tracking-[0.4em] text-[10px] uppercase mb-8 block">Member Access</span>
-                    <h2 class="font-headline text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-10 leading-tight">
-                        Join the Atelier <span class="italic font-light opacity-50 underline decoration-accent">Inner Circle.</span>
+                    <span class="text-accent font-bold tracking-[0.4em] text-[10px] uppercase mb-8 block">Member
+                        Access</span>
+                    <h2
+                        class="font-headline text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-10 leading-tight">
+                        Join the Atelier <span class="italic font-light opacity-50 underline decoration-accent">Inner
+                            Circle.</span>
                     </h2>
                     <p class="text-white/40 text-xl font-light leading-relaxed mb-16 max-w-2xl mx-auto">
-                        Be the first to secure limited-edition drops, exclusive design insights, and early-bird curations from our global atelier.
+                        Be the first to secure limited-edition drops, exclusive design insights, and early-bird
+                        curations from our global atelier.
                     </p>
                     <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
                         <input
                             class="flex-1 bg-white/5 border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-5 px-8 text-white placeholder:text-white/20"
                             placeholder="your@email.com" type="email" />
-                        <button type="button" class="accent-gradient text-white py-5 px-10 rounded-2xl font-bold text-lg hover:shadow-[0_20px_40px_rgba(197,160,89,0.3)] transition-all">
+                        <button type="button"
+                            class="accent-gradient text-white py-5 px-10 rounded-2xl font-bold text-lg hover:shadow-[0_20px_40px_rgba(197,160,89,0.3)] transition-all">
                             Apply for Access
                         </button>
                     </form>
-                    <p class="mt-8 text-[10px] uppercase tracking-widest text-white/20">Invite-Only Community. No SPAM, Only Curation.</p>
+                    <p class="mt-8 text-[10px] uppercase tracking-widest text-white/20">Invite-Only Community. No SPAM,
+                        Only Curation.</p>
                 </div>
             </div>
         </section>
@@ -883,52 +1024,63 @@
             <div class="max-w-7xl mx-auto px-12 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
                     <div class="reveal-up">
-                        <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-8 block">Concierge</span>
-                        <h2 class="font-headline text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-[0.9]">
+                        <span
+                            class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-8 block">Concierge</span>
+                        <h2
+                            class="font-headline text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-[0.9]">
                             Personalized <span class="italic font-light opacity-60">Success.</span>
                         </h2>
                         <p class="text-white/50 text-xl mb-12 leading-relaxed font-light">
-                            Our team is dedicated to ensuring your experience is as seamless as the products we curate. Reach out for bespoke assistance.
+                            Our team is dedicated to ensuring your experience is as seamless as the products we curate.
+                            Reach out for bespoke assistance.
                         </p>
                         <div class="space-y-10">
                             <div class="flex items-center gap-6 group">
-                                <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500">
+                                <div
+                                    class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500">
                                     <span class="material-symbols-outlined">mail</span>
                                 </div>
                                 <div>
-                                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30 mb-1">Email</p>
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30 mb-1">Email
+                                    </p>
                                     <p class="text-white text-lg font-medium">atelier@jafactor.com</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-6 group">
-                                <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500">
+                                <div
+                                    class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500">
                                     <span class="material-symbols-outlined">call</span>
                                 </div>
                                 <div>
-                                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30 mb-1">Inquiries</p>
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30 mb-1">
+                                        Inquiries</p>
                                     <p class="text-white text-lg font-medium">+1 800-JAFACTOR</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white/[0.03] backdrop-blur-3xl p-12 rounded-[3rem] border border-white/10 shadow-2xl reveal-up" style="transition-delay: 0.2s;">
+                    <div class="bg-white/[0.03] backdrop-blur-3xl p-12 rounded-[3rem] border border-white/10 shadow-2xl reveal-up"
+                        style="transition-delay: 0.2s;">
                         <form class="space-y-8">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <div class="space-y-3">
-                                    <label class="text-[10px] font-bold text-white uppercase tracking-[0.2em] ml-1">Name</label>
+                                    <label
+                                        class="text-[10px] font-bold text-white uppercase tracking-[0.2em] ml-1">Name</label>
                                     <input
                                         class="w-full bg-white/[0.05] border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-4 px-6 text-white placeholder:text-white/20"
                                         placeholder="John Doe" type="text" />
                                 </div>
                                 <div class="space-y-3">
-                                    <label class="text-[10px] font-bold text-white uppercase tracking-[0.2em] ml-1">Email</label>
+                                    <label
+                                        class="text-[10px] font-bold text-white uppercase tracking-[0.2em] ml-1">Email</label>
                                     <input
                                         class="w-full bg-white/[0.05] border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-4 px-6 text-white placeholder:text-white/20"
                                         placeholder="john@example.com" type="email" />
                                 </div>
                             </div>
                             <div class="space-y-3">
-                                <label class="text-[10px] font-bold text-white uppercase tracking-[0.2em] ml-1">Message</label>
+                                <label
+                                    class="text-[10px] font-bold text-white uppercase tracking-[0.2em] ml-1">Message</label>
                                 <textarea
                                     class="w-full bg-white/[0.05] border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-4 px-6 text-white placeholder:text-white/20"
                                     placeholder="How can we assist you today?" rows="4"></textarea>
@@ -947,7 +1099,8 @@
         <section id="faq" class="py-32 bg-surface">
             <div class="max-w-4xl mx-auto px-12">
                 <div class="text-center mb-24 reveal-up">
-                    <span class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Inquiries</span>
+                    <span
+                        class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-6 block">Inquiries</span>
                     <h2 class="font-headline text-5xl md:text-6xl font-extrabold text-primary tracking-tight mb-8">
                         Concierge Support
                     </h2>
@@ -958,31 +1111,36 @@
                 <div class="space-y-4">
                     <!-- FAQ Item 1 -->
                     <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-                        <button class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
+                        <button
+                            class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
                             <span>What is your return policy?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
                         <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="px-8 pb-6 text-on-surface-variant leading-relaxed">
-                                We offer a 30-day return policy on all items. Products must be in original condition with tags attached.
+                                We offer a 30-day return policy on all items. Products must be in original condition
+                                with tags attached.
                             </div>
                         </div>
                     </div>
                     <!-- FAQ Item 2 -->
                     <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-                        <button class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
+                        <button
+                            class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
                             <span>How long does shipping take?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
                         <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="px-8 pb-6 text-on-surface-variant leading-relaxed">
-                                Standard shipping takes 5-7 business days. Express shipping is available for 2-3 business days delivery.
+                                Standard shipping takes 5-7 business days. Express shipping is available for 2-3
+                                business days delivery.
                             </div>
                         </div>
                     </div>
                     <!-- FAQ Item 3 -->
                     <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-                        <button class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
+                        <button
+                            class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
                             <span>Do you ship internationally?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
@@ -994,19 +1152,22 @@
                     </div>
                     <!-- FAQ Item 4 -->
                     <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-                        <button class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
+                        <button
+                            class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
                             <span>How can I track my order?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
                         <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="px-8 pb-6 text-on-surface-variant leading-relaxed">
-                                Once your order ships, you'll receive a tracking number via email to monitor your delivery.
+                                Once your order ships, you'll receive a tracking number via email to monitor your
+                                delivery.
                             </div>
                         </div>
                     </div>
                     <!-- FAQ Item 5 -->
                     <div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-                        <button class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
+                        <button
+                            class="faq-trigger w-full text-left px-8 py-6 flex items-center justify-between gap-4 font-headline text-lg font-bold text-primary hover:bg-slate-50 transition-all">
                             <span>What payment methods do you accept?</span>
                             <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
                         </button>
@@ -1020,42 +1181,57 @@
             </div>
         </section>
     </main>
-    <footer
-        class="w-full bg-white pt-24 pb-16 text-primary font-body border-t border-black/5">
-        
+    <footer class="w-full bg-white pt-24 pb-16 text-primary font-body border-t border-black/5">
+
         <!-- Trust Bar Section -->
         <div class="max-w-7xl mx-auto px-8 mb-24">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-black/5 pb-24">
                 <div class="flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 shadow-sm">
+                    <div
+                        class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 shadow-sm">
                         <span class="text-3xl">🎧</span>
                     </div>
-                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">24/7 Support</h4>
-                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">Dedicated Concierge Service</p>
-                </div>
-                
-                <div class="flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 overflow-hidden shadow-sm">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKXf4E9ZCy6SyC54aZNwmg8Dg25lQdYlRxecKJAX60jK-xIaJ0t_K89eel6IBKF36-obieQeZQFdj8AdihBWwd4MM8BsCm085sAJSqdsxVvV6mlvCSEn_owBFERmdpdhzEWjvIkKJ42KlO8VDf4cjuxeSpMj_3WPMG2lYrEHfP2zoT3NAM5PTEucJQ_S3G4rPL005eszM7-0UPvu5kGwUH_y8TSqSUXaIIDtk6q6t9fBLaua3ueF3MyOxsdtBi7JquM_DfcQsgcdI" alt="Worldwide" class="w-8 h-8 opacity-40 group-hover:opacity-100 transition-opacity grayscale">
-                    </div>
-                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">Worldwide Shipping</h4>
-                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">Insured Global Delivery</p>
+                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">24/7 Support
+                    </h4>
+                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">Dedicated Concierge
+                        Service</p>
                 </div>
 
                 <div class="flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 shadow-sm">
-                        <span class="material-symbols-outlined text-3xl text-primary group-hover:text-white transition-colors">verified_user</span>
+                    <div
+                        class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 overflow-hidden shadow-sm">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKXf4E9ZCy6SyC54aZNwmg8Dg25lQdYlRxecKJAX60jK-xIaJ0t_K89eel6IBKF36-obieQeZQFdj8AdihBWwd4MM8BsCm085sAJSqdsxVvV6mlvCSEn_owBFERmdpdhzEWjvIkKJ42KlO8VDf4cjuxeSpMj_3WPMG2lYrEHfP2zoT3NAM5PTEucJQ_S3G4rPL005eszM7-0UPvu5kGwUH_y8TSqSUXaIIDtk6q6t9fBLaua3ueF3MyOxsdtBi7JquM_DfcQsgcdI"
+                            alt="Worldwide"
+                            class="w-8 h-8 opacity-40 group-hover:opacity-100 transition-opacity grayscale">
                     </div>
-                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">Verified Quality</h4>
-                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">Meticulously Inspected</p>
+                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">Worldwide
+                        Shipping</h4>
+                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">Insured Global
+                        Delivery</p>
                 </div>
 
                 <div class="flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 shadow-sm">
-                        <span class="material-symbols-outlined text-3xl text-primary group-hover:text-white transition-colors">published_with_changes</span>
+                    <div
+                        class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 shadow-sm">
+                        <span
+                            class="material-symbols-outlined text-3xl text-primary group-hover:text-white transition-colors">verified_user</span>
                     </div>
-                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">Hassle-Free Returns</h4>
-                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">30-Day Atelier Guarantee</p>
+                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">Verified
+                        Quality</h4>
+                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">Meticulously Inspected
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:bg-accent transition-all duration-500 shadow-sm">
+                        <span
+                            class="material-symbols-outlined text-3xl text-primary group-hover:text-white transition-colors">published_with_changes</span>
+                    </div>
+                    <h4 class="font-headline font-bold text-lg mb-2 text-accent [font-variant:small-caps]">Hassle-Free
+                        Returns</h4>
+                    <p class="text-on-surface-muted text-xs font-light [font-variant:small-caps]">30-Day Atelier
+                        Guarantee</p>
                 </div>
             </div>
         </div>
@@ -1086,34 +1262,23 @@
             </div>
             <div class="flex flex-col space-y-4">
                 <h4 class="font-bold text-primary uppercase tracking-widest text-xs mb-2">Company</h4>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#about-atelier">About Us</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Careers</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Sustainability</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Press</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#about-atelier">About Us</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Careers</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Sustainability</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Press</a>
             </div>
             <div class="flex flex-col space-y-4">
                 <h4 class="font-bold text-primary uppercase tracking-widest text-xs mb-2">Support</h4>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Shipping Info</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Returns &amp; Exchanges</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Contact Us</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#faq">FAQ</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Shipping Info</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Returns &amp; Exchanges</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Contact Us</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#faq">FAQ</a>
             </div>
             <div class="flex flex-col space-y-4">
                 <h4 class="font-bold text-primary uppercase tracking-widest text-xs mb-2">Legal</h4>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Privacy Policy</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Terms of Service</a>
-                <a class="text-on-surface-muted hover:text-accent transition-all"
-                    href="#">Cookies</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Privacy Policy</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Terms of Service</a>
+                <a class="text-on-surface-muted hover:text-accent transition-all" href="#">Cookies</a>
             </div>
         </div>
         <div
@@ -1135,10 +1300,12 @@
     </footer>
     <!-- Cart Drawer -->
     <div id="cart-overlay" class="fixed inset-0 bg-black/50 z-[60] backdrop-blur-sm pointer-events-auto"></div>
-    <div id="cart-drawer" class="fixed top-0 right-0 w-full max-w-md h-full bg-white z-[70] shadow-2xl flex flex-col font-headline">
+    <div id="cart-drawer"
+        class="fixed top-0 right-0 w-full max-w-md h-full bg-white z-[70] shadow-2xl flex flex-col font-headline">
         <div class="p-8 border-b border-slate-100 flex items-center justify-between">
             <h3 class="text-3xl font-extrabold text-primary tracking-tight">Atelier Cart</h3>
-            <button id="cart-close" class="w-12 h-12 rounded-full hover:bg-slate-100 flex items-center justify-center transition-colors">
+            <button id="cart-close"
+                class="w-12 h-12 rounded-full hover:bg-slate-100 flex items-center justify-center transition-colors">
                 <span class="material-symbols-outlined">close</span>
             </button>
         </div>
@@ -1150,166 +1317,188 @@
                 <span class="font-medium text-on-surface-muted">Subtotal</span>
                 <span id="cart-total" class="font-bold text-primary">$0.00</span>
             </div>
-            <button class="w-full accent-gradient text-white py-5 rounded-2xl font-bold text-lg hover:shadow-[0_20px_40px_rgba(197,160,89,0.3)] transition-all">
+            <button
+                class="w-full accent-gradient text-white py-5 rounded-2xl font-bold text-lg hover:shadow-[0_20px_40px_rgba(197,160,89,0.3)] transition-all">
                 Proceed to Checkout
             </button>
-            <p class="text-center text-[10px] uppercase tracking-[0.2em] text-on-surface-muted">Insured Express Shipping Included</p>
+            <p class="text-center text-[10px] uppercase tracking-[0.2em] text-on-surface-muted">Insured Express Shipping
+                Included</p>
         </div>
-    <!-- Auth Modal -->
-    <div id="auth-overlay" class="fixed inset-0 bg-black/50 z-[80] backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500"></div>
-    <div id="auth-modal" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md bg-white/90 backdrop-blur-3xl z-[90] rounded-[3rem] shadow-2xl p-10 opacity-0 pointer-events-none transition-all duration-500 scale-95 font-headline border border-white/20">
-        <div class="flex justify-between items-center mb-10">
-            <h3 class="text-3xl font-extrabold text-primary tracking-tight">Atelier Access</h3>
-            <button id="auth-close" class="w-12 h-12 rounded-full hover:bg-black/5 flex items-center justify-center transition-colors">
+        <!-- Auth Modal -->
+        <div id="auth-overlay"
+            class="fixed inset-0 bg-black/50 z-[80] backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500">
+        </div>
+        <div id="auth-modal"
+            class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md bg-white/90 backdrop-blur-3xl z-[90] rounded-[3rem] shadow-2xl p-10 opacity-0 pointer-events-none transition-all duration-500 scale-95 font-headline border border-white/20">
+            <div class="flex justify-between items-center mb-10">
+                <h3 class="text-3xl font-extrabold text-primary tracking-tight">Atelier Access</h3>
+                <button id="auth-close"
+                    class="w-12 h-12 rounded-full hover:bg-black/5 flex items-center justify-center transition-colors">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <form class="space-y-8">
+                <div class="space-y-3">
+                    <label class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Email
+                        Address</label>
+                    <input
+                        class="w-full bg-black/5 border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-4 px-6 text-primary placeholder:text-primary/20"
+                        placeholder="name@example.com" type="email" />
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center px-1">
+                        <label class="text-[10px] font-bold text-primary uppercase tracking-[0.2em]">Password</label>
+                        <a href="#"
+                            class="text-[10px] font-medium text-accent uppercase tracking-widest hover:underline">Forgot?</a>
+                    </div>
+                    <input
+                        class="w-full bg-black/5 border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-4 px-6 text-primary placeholder:text-primary/20"
+                        placeholder="••••••••" type="password" />
+                </div>
+                <div class="pt-4">
+                    <button type="button"
+                        class="w-full button-premium text-white py-5 rounded-2xl font-bold text-lg shadow-xl shadow-accent/20">
+                        Enter the Atelier
+                    </button>
+                </div>
+                <p class="text-center text-on-surface-muted text-xs font-light">
+                    Not a member? <a href="#"
+                        class="text-primary font-bold hover:text-accent underline transition-colors">Apply for
+                        Access</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- Quick View Modal -->
+        <div id="quick-view-overlay"
+            class="fixed inset-0 bg-black/60 z-[100] backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500">
+        </div>
+        <div id="quick-view-modal"
+            class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-6xl bg-white z-[110] rounded-[3rem] shadow-2xl opacity-0 pointer-events-none transition-all duration-500 scale-95 overflow-hidden flex flex-col lg:flex-row h-auto lg:max-h-[85vh] font-headline">
+            <button id="quick-view-close"
+                class="absolute top-8 right-8 w-12 h-12 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center transition-all z-20">
                 <span class="material-symbols-outlined">close</span>
             </button>
-        </div>
-        <form class="space-y-8">
-            <div class="space-y-3">
-                <label class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] ml-1">Email Address</label>
-                <input
-                    class="w-full bg-black/5 border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-4 px-6 text-primary placeholder:text-primary/20"
-                    placeholder="name@example.com" type="email" />
-            </div>
-            <div class="space-y-3">
-                <div class="flex justify-between items-center px-1">
-                    <label class="text-[10px] font-bold text-primary uppercase tracking-[0.2em]">Password</label>
-                    <a href="#" class="text-[10px] font-medium text-accent uppercase tracking-widest hover:underline">Forgot?</a>
-                </div>
-                <input
-                    class="w-full bg-black/5 border-none rounded-2xl focus:ring-2 focus:ring-accent transition-all py-4 px-6 text-primary placeholder:text-primary/20"
-                    placeholder="••••••••" type="password" />
-            </div>
-            <div class="pt-4">
-                <button type="button" class="w-full button-premium text-white py-5 rounded-2xl font-bold text-lg shadow-xl shadow-accent/20">
-                    Enter the Atelier
-                </button>
-            </div>
-            <p class="text-center text-on-surface-muted text-xs font-light">
-                Not a member? <a href="#" class="text-primary font-bold hover:text-accent underline transition-colors">Apply for Access</a>
-            </p>
-        </form>
-    </div>
 
-    <!-- Quick View Modal -->
-    <div id="quick-view-overlay" class="fixed inset-0 bg-black/60 z-[100] backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500"></div>
-    <div id="quick-view-modal" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-6xl bg-white z-[110] rounded-[3rem] shadow-2xl opacity-0 pointer-events-none transition-all duration-500 scale-95 overflow-hidden flex flex-col lg:flex-row h-auto lg:max-h-[85vh] font-headline">
-        <button id="quick-view-close" class="absolute top-8 right-8 w-12 h-12 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center transition-all z-20">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-        
-        <div class="w-full lg:w-1/2 bg-surface p-8 lg:p-12 flex items-center justify-center shrink-0">
-            <div class="w-full h-full max-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-                <img id="qv-image" src="" alt="Product" class="w-full h-full object-cover">
-            </div>
-        </div>
-        
-        <div class="flex-1 p-10 lg:p-16 overflow-y-auto">
-            <div class="mb-10">
-                <span id="qv-category" class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-4 block">Collection</span>
-                <h2 id="qv-name" class="text-4xl lg:text-5xl font-extrabold text-primary tracking-tight mb-4 leading-tight">Product Name</h2>
-                <p id="qv-subtitle" class="text-on-surface-muted italic font-light text-lg">Absolute Acoustic Ritual</p>
-            </div>
-            
-            <div class="mb-12">
-                <h4 class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4">Designer's Note</h4>
-                <p id="qv-desc" class="text-primary/70 font-light leading-relaxed text-lg italic">
-                    Product description goes here.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
-                <div>
-                    <h4 class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4">Masterpiece Details</h4>
-                    <ul id="qv-specs" class="space-y-3 font-medium text-sm text-primary/80">
-                        <!-- Populated by JS -->
-                    </ul>
+            <div class="w-full lg:w-1/2 bg-surface p-8 lg:p-12 flex items-center justify-center shrink-0">
+                <div class="w-full h-full max-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                    <img id="qv-image" src="" alt="Product" class="w-full h-full object-cover">
                 </div>
-                <div>
-                    <h4 class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4">Availability</h4>
-                    <p class="text-primary/80 font-bold flex items-center gap-2">
-                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                        Available for Immediate Curation
+            </div>
+
+            <div class="flex-1 p-10 lg:p-16 overflow-y-auto">
+                <div class="mb-10">
+                    <span id="qv-category"
+                        class="text-accent font-bold tracking-[0.3em] text-[10px] uppercase mb-4 block">Collection</span>
+                    <h2 id="qv-name"
+                        class="text-4xl lg:text-5xl font-extrabold text-primary tracking-tight mb-4 leading-tight">
+                        Product Name</h2>
+                    <p id="qv-subtitle" class="text-on-surface-muted italic font-light text-lg">Absolute Acoustic Ritual
                     </p>
                 </div>
-            </div>
-            
-            <div class="flex items-center gap-8 pt-10 border-t border-black/5">
-                <div class="flex flex-col">
-                    <span class="text-[10px] font-bold text-on-surface-muted uppercase tracking-[0.2em] mb-2">Price</span>
-                    <span id="qv-price" class="text-3xl font-extrabold text-primary tracking-tighter">$0.00</span>
+
+                <div class="mb-12">
+                    <h4 class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4">Designer's Note</h4>
+                    <p id="qv-desc" class="text-primary/70 font-light leading-relaxed text-lg italic">
+                        Product description goes here.
+                    </p>
                 </div>
-                <button id="qv-add-btn" class="flex-1 button-premium text-white py-5 rounded-2xl font-bold text-lg shadow-xl shadow-accent/20 flex items-center justify-center gap-3">
-                    <span class="material-symbols-outlined text-sm">shopping_bag</span>
-                    Add to Collection
-                </button>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <h4 class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4">Masterpiece
+                            Details</h4>
+                        <ul id="qv-specs" class="space-y-3 font-medium text-sm text-primary/80">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4">Availability</h4>
+                        <p class="text-primary/80 font-bold flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                            Available for Immediate Curation
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-8 pt-10 border-t border-black/5">
+                    <div class="flex flex-col">
+                        <span
+                            class="text-[10px] font-bold text-on-surface-muted uppercase tracking-[0.2em] mb-2">Price</span>
+                        <span id="qv-price" class="text-3xl font-extrabold text-primary tracking-tighter">$0.00</span>
+                    </div>
+                    <button id="qv-add-btn"
+                        class="flex-1 button-premium text-white py-5 rounded-2xl font-bold text-lg shadow-xl shadow-accent/20 flex items-center justify-center gap-3">
+                        <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                        Add to Collection
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        // Reveal Animations
-        const observerOptions = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        <script>
+            // Reveal Animations
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+
+            // Shopping Cart Logic
+            let cart = JSON.parse(localStorage.getItem('jafactor_cart')) || [];
+
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-overlay');
+            const trigger = document.getElementById('cart-trigger');
+            const closeBtn = document.getElementById('cart-close');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            const cartBadge = document.getElementById('cart-badge');
+
+            function toggleCart(open) {
+                if (open) {
+                    drawer.classList.add('open');
+                    overlay.classList.add('open');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    drawer.classList.remove('open');
+                    overlay.classList.remove('open');
+                    document.body.style.overflow = '';
                 }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
-
-        // Shopping Cart Logic
-        let cart = JSON.parse(localStorage.getItem('jafactor_cart')) || [];
-
-        const drawer = document.getElementById('cart-drawer');
-        const overlay = document.getElementById('cart-overlay');
-        const trigger = document.getElementById('cart-trigger');
-        const closeBtn = document.getElementById('cart-close');
-        const cartItemsContainer = document.getElementById('cart-items');
-        const cartTotal = document.getElementById('cart-total');
-        const cartBadge = document.getElementById('cart-badge');
-
-        function toggleCart(open) {
-            if (open) {
-                drawer.classList.add('open');
-                overlay.classList.add('open');
-                document.body.style.overflow = 'hidden';
-            } else {
-                drawer.classList.remove('open');
-                overlay.classList.remove('open');
-                document.body.style.overflow = '';
             }
-        }
 
-        function updateCart() {
-            localStorage.setItem('jafactor_cart', JSON.stringify(cart));
-            renderCart();
-            updateBadge();
-        }
+            function updateCart() {
+                localStorage.setItem('jafactor_cart', JSON.stringify(cart));
+                renderCart();
+                updateBadge();
+            }
 
-        function updateBadge() {
-            const count = cart.reduce((acc, item) => acc + item.quantity, 0);
-            cartBadge.textContent = count;
-            cartBadge.style.display = count === 0 ? 'none' : 'flex';
-        }
+            function updateBadge() {
+                const count = cart.reduce((acc, item) => acc + item.quantity, 0);
+                cartBadge.textContent = count;
+                cartBadge.style.display = count === 0 ? 'none' : 'flex';
+            }
 
-        function renderCart() {
-            if (cart.length === 0) {
-                cartItemsContainer.innerHTML = `
+            function renderCart() {
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = `
                     <div class="text-center py-20 text-on-surface-muted">
                         <span class="material-symbols-outlined text-7xl font-light mb-6 opacity-20">shopping_bag</span>
                         <p class="font-headline text-lg italic font-light">Your collection is empty</p>
                     </div>`;
-                cartTotal.textContent = '$0.00';
-                return;
-            }
+                    cartTotal.textContent = '$0.00';
+                    return;
+                }
 
-            let total = 0;
-            cartItemsContainer.innerHTML = cart.map(item => {
-                total += item.price * item.quantity;
-                return `
+                let total = 0;
+                cartItemsContainer.innerHTML = cart.map(item => {
+                    total += item.price * item.quantity;
+                    return `
                     <div class="flex gap-6 cart-item-anim items-center">
                         <div class="w-24 h-24 rounded-2xl overflow-hidden bg-surface flex-shrink-0 border border-black/5">
                             <img src="${item.image}" class="w-full h-full object-cover">
@@ -1324,313 +1513,313 @@
                             </div>
                         </div>
                     </div>`;
-            }).join('');
-            cartTotal.textContent = '$' + total.toFixed(2);
-        }
+                }).join('');
+                cartTotal.textContent = '$' + total.toFixed(2);
+            }
 
-        window.removeFromCart = function(id) {
-            cart = cart.filter(item => item.id !== id);
-            updateCart();
-        };
-
-        trigger.addEventListener('click', () => toggleCart(true));
-        closeBtn.addEventListener('click', () => toggleCart(false));
-        overlay.addEventListener('click', () => toggleCart(false));
-
-        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const card = btn.closest('.product-card');
-                const id = parseInt(card.dataset.id);
-                const name = card.dataset.name;
-                const price = parseFloat(card.dataset.price);
-                const image = card.dataset.image;
-
-                const existingItem = cart.find(item => item.id === id);
-                if (existingItem) {
-                    existingItem.quantity++;
-                } else {
-                    cart.push({ id, name, price, image, quantity: 1 });
-                }
-
+            window.removeFromCart = function (id) {
+                cart = cart.filter(item => item.id !== id);
                 updateCart();
-                toggleCart(true);
+            };
+
+            trigger.addEventListener('click', () => toggleCart(true));
+            closeBtn.addEventListener('click', () => toggleCart(false));
+            overlay.addEventListener('click', () => toggleCart(false));
+
+            document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const card = btn.closest('.product-card');
+                    const id = parseInt(card.dataset.id);
+                    const name = card.dataset.name;
+                    const price = parseFloat(card.dataset.price);
+                    const image = card.dataset.image;
+
+                    const existingItem = cart.find(item => item.id === id);
+                    if (existingItem) {
+                        existingItem.quantity++;
+                    } else {
+                        cart.push({ id, name, price, image, quantity: 1 });
+                    }
+
+                    updateCart();
+                    toggleCart(true);
+                });
             });
-        });
 
-        // FAQ Logic
-        document.querySelectorAll('.faq-trigger').forEach(faqTrigger => {
-            faqTrigger.addEventListener('click', () => {
-                const content = faqTrigger.nextElementSibling;
-                const icon = faqTrigger.querySelector('.material-symbols-outlined');
-                const isOpen = content.style.maxHeight;
+            // FAQ Logic
+            document.querySelectorAll('.faq-trigger').forEach(faqTrigger => {
+                faqTrigger.addEventListener('click', () => {
+                    const content = faqTrigger.nextElementSibling;
+                    const icon = faqTrigger.querySelector('.material-symbols-outlined');
+                    const isOpen = content.style.maxHeight;
 
-                document.querySelectorAll('.faq-content').forEach(otherContent => {
-                    if (otherContent !== content) {
-                        otherContent.style.maxHeight = null;
-                        otherContent.previousElementSibling.querySelector('.material-symbols-outlined').textContent = 'add';
+                    document.querySelectorAll('.faq-content').forEach(otherContent => {
+                        if (otherContent !== content) {
+                            otherContent.style.maxHeight = null;
+                            otherContent.previousElementSibling.querySelector('.material-symbols-outlined').textContent = 'add';
+                        }
+                    });
+
+                    if (isOpen) {
+                        content.style.maxHeight = null;
+                        icon.textContent = 'add';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        icon.textContent = 'remove';
+                    }
+                });
+            });
+
+            // Initialize
+            updateCart();
+
+            // Navigation Interactivity
+            const header = document.getElementById('main-header');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileOverlay = document.getElementById('mobile-menu-overlay');
+            const mobileTrigger = document.getElementById('mobile-menu-trigger');
+            const mobileClose = document.getElementById('mobile-menu-close');
+
+            // Scroll States
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+
+            // Mobile Menu Toggle
+            function toggleMobileMenu(open) {
+                if (open) {
+                    mobileMenu.classList.add('open');
+                    mobileOverlay.classList.remove('pointer-events-none');
+                    mobileOverlay.classList.add('opacity-100');
+                    document.body.style.overflow = 'hidden';
+
+                    // Staggered reveal for menu items
+                    document.querySelectorAll('.menu-item').forEach((item, index) => {
+                        item.style.transitionDelay = `${index * 50 + 200}ms`;
+                    });
+                } else {
+                    mobileMenu.classList.remove('open');
+                    mobileOverlay.classList.add('pointer-events-none');
+                    mobileOverlay.classList.remove('opacity-100');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            mobileTrigger.addEventListener('click', () => toggleMobileMenu(true));
+            mobileClose.addEventListener('click', () => toggleMobileMenu(false));
+            mobileOverlay.addEventListener('click', () => toggleMobileMenu(false));
+
+            // Hero Carousel Logic
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.hero-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+
+            function showSlide(index) {
+                slides.forEach(s => s.classList.remove('active'));
+                dots.forEach(d => d.classList.remove('active'));
+
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+                currentSlide = index;
+            }
+
+            function nextSlide() {
+                let next = (currentSlide + 1) % slides.length;
+                showSlide(next);
+            }
+
+            let slideInterval = setInterval(nextSlide, 6000);
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    showSlide(index);
+                    slideInterval = setInterval(nextSlide, 6000);
+                });
+            });
+
+            // Quick View Logic
+            const qvModal = document.getElementById('quick-view-modal');
+            const qvOverlay = document.getElementById('quick-view-overlay');
+            const qvClose = document.getElementById('quick-view-close');
+
+            // Catalog Filtering Logic
+            window.filterCatalog = function (category) {
+                const btns = document.querySelectorAll('.filter-btn');
+                const products = document.querySelectorAll('.product-card');
+
+                btns.forEach(btn => {
+                    if (btn.textContent.toLowerCase().includes(category) || (category === 'all' && btn.textContent.toLowerCase().includes('all'))) {
+                        btn.classList.add('active', 'text-primary');
+                        btn.classList.remove('text-on-surface-muted');
+                    } else {
+                        btn.classList.remove('active', 'text-primary');
+                        btn.classList.add('text-on-surface-muted');
                     }
                 });
 
-                if (isOpen) {
-                    content.style.maxHeight = null;
-                    icon.textContent = 'add';
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                    icon.textContent = 'remove';
-                }
-            });
-        });
-
-        // Initialize
-        updateCart();
-
-        // Navigation Interactivity
-        const header = document.getElementById('main-header');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileOverlay = document.getElementById('mobile-menu-overlay');
-        const mobileTrigger = document.getElementById('mobile-menu-trigger');
-        const mobileClose = document.getElementById('mobile-menu-close');
-
-        // Scroll States
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('header-scrolled');
-            } else {
-                header.classList.remove('header-scrolled');
-            }
-        });
-
-        // Mobile Menu Toggle
-        function toggleMobileMenu(open) {
-            if (open) {
-                mobileMenu.classList.add('open');
-                mobileOverlay.classList.remove('pointer-events-none');
-                mobileOverlay.classList.add('opacity-100');
-                document.body.style.overflow = 'hidden';
-                
-                // Staggered reveal for menu items
-                document.querySelectorAll('.menu-item').forEach((item, index) => {
-                    item.style.transitionDelay = `${index * 50 + 200}ms`;
+                products.forEach(product => {
+                    if (category === 'all' || product.dataset.category === category) {
+                        product.style.display = 'block';
+                        setTimeout(() => product.classList.add('visible'), 100);
+                    } else {
+                        product.classList.remove('visible');
+                        setTimeout(() => product.style.display = 'none', 500);
+                    }
                 });
-            } else {
-                mobileMenu.classList.remove('open');
-                mobileOverlay.classList.add('pointer-events-none');
-                mobileOverlay.classList.remove('opacity-100');
-                document.body.style.overflow = '';
-            }
-        }
+            };
 
-        mobileTrigger.addEventListener('click', () => toggleMobileMenu(true));
-        mobileClose.addEventListener('click', () => toggleMobileMenu(false));
-        mobileOverlay.addEventListener('click', () => toggleMobileMenu(false));
-
-        // Hero Carousel Logic
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.carousel-dot');
-
-        function showSlide(index) {
-            slides.forEach(s => s.classList.remove('active'));
-            dots.forEach(d => d.classList.remove('active'));
-            
-            slides[index].classList.add('active');
-            dots[index].classList.add('active');
-            currentSlide = index;
-        }
-
-        function nextSlide() {
-            let next = (currentSlide + 1) % slides.length;
-            showSlide(next);
-        }
-
-        let slideInterval = setInterval(nextSlide, 6000);
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                clearInterval(slideInterval);
-                showSlide(index);
-                slideInterval = setInterval(nextSlide, 6000);
-            });
-        });
-
-        // Quick View Logic
-        const qvModal = document.getElementById('quick-view-modal');
-        const qvOverlay = document.getElementById('quick-view-overlay');
-        const qvClose = document.getElementById('quick-view-close');
-
-        // Catalog Filtering Logic
-        window.filterCatalog = function(category) {
-            const btns = document.querySelectorAll('.filter-btn');
-            const products = document.querySelectorAll('.product-card');
-
-            btns.forEach(btn => {
-                if(btn.textContent.toLowerCase().includes(category) || (category === 'all' && btn.textContent.toLowerCase().includes('all'))) {
-                    btn.classList.add('active', 'text-primary');
-                    btn.classList.remove('text-on-surface-muted');
-                } else {
-                    btn.classList.remove('active', 'text-primary');
-                    btn.classList.add('text-on-surface-muted');
+            const qvData = {
+                1: {
+                    name: "Elite Sonic Pods",
+                    category: "Digital Audio",
+                    subtitle: "Absolute Acoustic Ritual",
+                    desc: "Engineered for the sonic purist. These pods feature an aerospace-grade titanium driver and adaptive noise cancellation that creates a private sanctuary in any environment.",
+                    price: 199.00,
+                    image: "premium_earbuds_gold_black_1776258581837.png",
+                    specs: ["40H Battery Life", "Titanium Drivers", "IPX7 Waterproof", "Spatial Audio Support"]
+                },
+                2: {
+                    name: "Lumina 4K Projector",
+                    category: "Visual Atelier",
+                    subtitle: "The Cinematic Portal",
+                    desc: "Transform any surface into a window to another world. With true-to-life 4K resolution and a sculptural charcoal body, it's a statement of both performance and art.",
+                    price: 449.00,
+                    image: "premium_portable_projector_1776258521982.png",
+                    specs: ["True 4K Resolution", "2000 Peak Lumens", "Wireless Cast Ready", "Ultra-Silent Cooling"]
+                },
+                3: {
+                    name: "Aura Wellness Mask",
+                    category: "Modern Biological",
+                    subtitle: "Sculptural Biological Light",
+                    desc: "A ritual of light. This futuristic therapy mask uses seven clinical wavelengths to revitalize your skin's natural architecture from within through photon-layered technology.",
+                    price: 289.00,
+                    image: "luxury_led_mask_1776258538282.png",
+                    specs: ["7 Light Wavelengths", "Medical Grade LED", "Cordless Design", "At-Home Sculpting Mode"]
+                },
+                4: {
+                    name: "Chronos Minimal Watch",
+                    category: "Modern Horology",
+                    subtitle: "Precision Reimagined",
+                    desc: "A statement of absolute time. With a titanium-layered charcoal body and sapphire crystal protection, it sits at the intersection of tech and luxury heritage.",
+                    price: 349.00,
+                    image: "chronos_watch_final.png",
+                    specs: ["Sapphire Crystal", "Titanium-Layered Body", "7-Day Smart Sync", "Deep-Sea Curation"]
+                },
+                5: {
+                    name: "Zenith Travel Suite",
+                    category: "Lifestyle Curation",
+                    subtitle: "The Global Ritual",
+                    desc: "Navigate the world with curated organization. Our hardshell suite features carbon stitching and smart modularity for the international professional.",
+                    price: 125.00,
+                    image: "zenith_travel_suite_final.png",
+                    specs: ["Hardshell Protection", "Carbon-Stitched Fabric", "Modular Organization", "RFID Guard"]
+                },
+                6: {
+                    name: "Elara Smart Lamp",
+                    category: "Atmospheric Art",
+                    subtitle: "Sculptural Warmth",
+                    desc: "A beacon of minimalist warmth. The Elara uses touchless gesture control and photon-balanced light to create a ritualistic sanctuary in any room.",
+                    price: 189.00,
+                    image: "elara_smart_lamp_final.png",
+                    specs: ["Gesture Control", "3000K Warm Glow", "App Atmospheric Sync", "Anodized Finish"]
                 }
-            });
+            };
 
-            products.forEach(product => {
-                if(category === 'all' || product.dataset.category === category) {
-                    product.style.display = 'block';
-                    setTimeout(() => product.classList.add('visible'), 100);
-                } else {
-                    product.classList.remove('visible');
-                    setTimeout(() => product.style.display = 'none', 500);
-                }
-            });
-        };
-        
-        const qvData = {
-            1: {
-                name: "Elite Sonic Pods",
-                category: "Digital Audio",
-                subtitle: "Absolute Acoustic Ritual",
-                desc: "Engineered for the sonic purist. These pods feature an aerospace-grade titanium driver and adaptive noise cancellation that creates a private sanctuary in any environment.",
-                price: 199.00,
-                image: "premium_earbuds_gold_black_1776258581837.png",
-                specs: ["40H Battery Life", "Titanium Drivers", "IPX7 Waterproof", "Spatial Audio Support"]
-            },
-            2: {
-                name: "Lumina 4K Projector",
-                category: "Visual Atelier",
-                subtitle: "The Cinematic Portal",
-                desc: "Transform any surface into a window to another world. With true-to-life 4K resolution and a sculptural charcoal body, it's a statement of both performance and art.",
-                price: 449.00,
-                image: "premium_portable_projector_1776258521982.png",
-                specs: ["True 4K Resolution", "2000 Peak Lumens", "Wireless Cast Ready", "Ultra-Silent Cooling"]
-            },
-            3: {
-                name: "Aura Wellness Mask",
-                category: "Modern Biological",
-                subtitle: "Sculptural Biological Light",
-                desc: "A ritual of light. This futuristic therapy mask uses seven clinical wavelengths to revitalize your skin's natural architecture from within through photon-layered technology.",
-                price: 289.00,
-                image: "luxury_led_mask_1776258538282.png",
-                specs: ["7 Light Wavelengths", "Medical Grade LED", "Cordless Design", "At-Home Sculpting Mode"]
-            },
-            4: {
-                name: "Chronos Minimal Watch",
-                category: "Modern Horology",
-                subtitle: "Precision Reimagined",
-                desc: "A statement of absolute time. With a titanium-layered charcoal body and sapphire crystal protection, it sits at the intersection of tech and luxury heritage.",
-                price: 349.00,
-                image: "chronos_watch_final.png",
-                specs: ["Sapphire Crystal", "Titanium-Layered Body", "7-Day Smart Sync", "Deep-Sea Curation"]
-            },
-            5: {
-                name: "Zenith Travel Suite",
-                category: "Lifestyle Curation",
-                subtitle: "The Global Ritual",
-                desc: "Navigate the world with curated organization. Our hardshell suite features carbon stitching and smart modularity for the international professional.",
-                price: 125.00,
-                image: "zenith_travel_suite_final.png",
-                specs: ["Hardshell Protection", "Carbon-Stitched Fabric", "Modular Organization", "RFID Guard"]
-            },
-            6: {
-                name: "Elara Smart Lamp",
-                category: "Atmospheric Art",
-                subtitle: "Sculptural Warmth",
-                desc: "A beacon of minimalist warmth. The Elara uses touchless gesture control and photon-balanced light to create a ritualistic sanctuary in any room.",
-                price: 189.00,
-                image: "elara_smart_lamp_final.png",
-                specs: ["Gesture Control", "3000K Warm Glow", "App Atmospheric Sync", "Anodized Finish"]
-            }
-        };
+            window.openQuickView = function (id) {
+                const product = qvData[id];
+                if (!product) return;
 
-        window.openQuickView = function(id) {
-            const product = qvData[id];
-            if (!product) return;
-            
-            document.getElementById('qv-name').textContent = product.name;
-            document.getElementById('qv-category').textContent = product.category;
-            document.getElementById('qv-subtitle').textContent = product.subtitle;
-            document.getElementById('qv-desc').textContent = product.desc;
-            document.getElementById('qv-price').textContent = '$' + product.price.toFixed(2);
-            document.getElementById('qv-image').src = product.image;
-            
-            const specsList = document.getElementById('qv-specs');
-            specsList.innerHTML = product.specs.map(s => `
+                document.getElementById('qv-name').textContent = product.name;
+                document.getElementById('qv-category').textContent = product.category;
+                document.getElementById('qv-subtitle').textContent = product.subtitle;
+                document.getElementById('qv-desc').textContent = product.desc;
+                document.getElementById('qv-price').textContent = '$' + product.price.toFixed(2);
+                document.getElementById('qv-image').src = product.image;
+
+                const specsList = document.getElementById('qv-specs');
+                specsList.innerHTML = product.specs.map(s => `
                 <li class="flex items-center gap-3">
                     <span class="w-1 h-1 bg-accent rounded-full"></span>
                     ${s}
                 </li>
             `).join('');
-            
-            qvModal.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
-            qvModal.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
-            qvOverlay.classList.remove('opacity-0', 'pointer-events-none');
-            qvOverlay.classList.add('opacity-100', 'pointer-events-auto');
-            document.body.style.overflow = 'hidden';
-            
-            // Re-bind add button
-            const addBtn = document.getElementById('qv-add-btn');
-            const newBtn = addBtn.cloneNode(true);
-            addBtn.parentNode.replaceChild(newBtn, addBtn);
-            newBtn.addEventListener('click', () => {
-                const existingItem = cart.find(item => item.id === id);
-                if (existingItem) {
-                    existingItem.quantity++;
-                } else {
-                    cart.push({ id, name: product.name, price: product.price, image: product.image, quantity: 1 });
-                }
-                updateCart();
-                qvOverlay.click(); // Close quickview
-                toggleCart(true); // Open cart
-            });
-        };
 
-        qvClose.addEventListener('click', () => qvOverlay.click());
-        qvOverlay.addEventListener('click', () => {
-            qvModal.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
-            qvModal.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
-            qvOverlay.classList.add('opacity-0', 'pointer-events-none');
-            qvOverlay.classList.remove('opacity-100', 'pointer-events-auto');
-            document.body.style.overflow = '';
-        });
-
-        // Auth Modal Logic
-        const authModal = document.getElementById('auth-modal');
-        const authOverlay = document.getElementById('auth-overlay');
-        const authTrigger = document.getElementById('auth-trigger');
-        const mobileAuthTrigger = document.getElementById('mobile-auth-trigger');
-        const authClose = document.getElementById('auth-close');
-
-        function toggleAuthModal(open) {
-            if (open) {
-                authModal.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
-                authModal.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
-                authOverlay.classList.remove('opacity-0', 'pointer-events-none');
-                authOverlay.classList.add('opacity-100', 'pointer-events-auto');
+                qvModal.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
+                qvModal.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
+                qvOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                qvOverlay.classList.add('opacity-100', 'pointer-events-auto');
                 document.body.style.overflow = 'hidden';
-            } else {
-                authModal.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
-                authModal.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
-                authOverlay.classList.add('opacity-0', 'pointer-events-none');
-                authOverlay.classList.remove('opacity-100', 'pointer-events-auto');
-                document.body.style.overflow = '';
-            }
-        }
 
-        authTrigger.addEventListener('click', () => toggleAuthModal(true));
-        
-        const bindAuthTrigger = (btn) => {
-            if(!btn) return;
-            btn.addEventListener('click', () => {
-                toggleMobileMenu(false);
-                setTimeout(() => toggleAuthModal(true), 600);
+                // Re-bind add button
+                const addBtn = document.getElementById('qv-add-btn');
+                const newBtn = addBtn.cloneNode(true);
+                addBtn.parentNode.replaceChild(newBtn, addBtn);
+                newBtn.addEventListener('click', () => {
+                    const existingItem = cart.find(item => item.id === id);
+                    if (existingItem) {
+                        existingItem.quantity++;
+                    } else {
+                        cart.push({ id, name: product.name, price: product.price, image: product.image, quantity: 1 });
+                    }
+                    updateCart();
+                    qvOverlay.click(); // Close quickview
+                    toggleCart(true); // Open cart
+                });
+            };
+
+            qvClose.addEventListener('click', () => qvOverlay.click());
+            qvOverlay.addEventListener('click', () => {
+                qvModal.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
+                qvModal.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
+                qvOverlay.classList.add('opacity-0', 'pointer-events-none');
+                qvOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+                document.body.style.overflow = '';
             });
-        };
-        
-        bindAuthTrigger(document.getElementById('mobile-auth-trigger'));
-        bindAuthTrigger(document.getElementById('mobile-auth-trigger-v2'));
-        
-        authClose.addEventListener('click', () => toggleAuthModal(false));
-        authOverlay.addEventListener('click', () => toggleAuthModal(false));
-    </script>
+
+            // Auth Modal Logic
+            const authModal = document.getElementById('auth-modal');
+            const authOverlay = document.getElementById('auth-overlay');
+            const authTrigger = document.getElementById('auth-trigger');
+            const mobileAuthTrigger = document.getElementById('mobile-auth-trigger');
+            const authClose = document.getElementById('auth-close');
+
+            function toggleAuthModal(open) {
+                if (open) {
+                    authModal.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
+                    authModal.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
+                    authOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                    authOverlay.classList.add('opacity-100', 'pointer-events-auto');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    authModal.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
+                    authModal.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
+                    authOverlay.classList.add('opacity-0', 'pointer-events-none');
+                    authOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            authTrigger.addEventListener('click', () => toggleAuthModal(true));
+
+            const bindAuthTrigger = (btn) => {
+                if (!btn) return;
+                btn.addEventListener('click', () => {
+                    toggleMobileMenu(false);
+                    setTimeout(() => toggleAuthModal(true), 600);
+                });
+            };
+
+            bindAuthTrigger(document.getElementById('mobile-auth-trigger'));
+            bindAuthTrigger(document.getElementById('mobile-auth-trigger-v2'));
+
+            authClose.addEventListener('click', () => toggleAuthModal(false));
+            authOverlay.addEventListener('click', () => toggleAuthModal(false));
+        </script>
 </body>
 </body>
 
